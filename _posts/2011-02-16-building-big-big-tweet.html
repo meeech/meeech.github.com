@@ -1,0 +1,24 @@
+---
+layout: post
+title: building big big tweet
+published: true
+---
+<p>Some story on <a href="http://bigbigtweet.appspot.com">big big tweet</a>.</p>
+<p>A few weeks ago I had this idea for a tool which would allow me to easily post multi-tweet tweets on twitter. Here&rsquo;s the original sketch:</p>
+<p>[[posterous-content:bkGwzhhhbbzxjpqCHBwy]]</p>
+<p>I was pretty convinced the front end could be pieced together in about a day.</p>
+<p>Overall, I&rsquo;m pretty happy both with what I learned, and what I put together in 1 weekend and 3 nights of <a href="http://developer.yahoo.com/yui/3/">yui3</a>, python, <a href="http://code.google.com/appengine/">google app engine</a>, twitter api.</p>
+<p><a href="http://developer.yahoo.com/yui/3/">yui3</a>&nbsp;was, as always, a pleasure to work with. The new&nbsp;<a href="http://developer.yahoo.com/yui/3/cssgrids/">grids system</a>&nbsp;is great. Learnt about the synthetic&nbsp;<a href="http://developer.yahoo.com/yui/3/api/YUI.html#event_valueChange">valueChange event</a>, which is handy when you are watching a textarea. yui3 is full of all sorts of wins, so if you&rsquo;re doing front end app development and haven&rsquo;t checked it out, you&rsquo;re doing yourself a disservice.</p>
+<p>Pretty pleased with the&nbsp;<a href="https://gist.github.com/828919">code</a>&nbsp;to break up the text into tweet sized chunks. I think i&rsquo;ve finally broken through to where recursion feels natural to think about. You can see the&nbsp;<a href="http://bigbigtweet.appspot.com/js/main.js">full script</a>, in context. There&rsquo;s room for improvement, but it doesn&rsquo;t smell too bad. :)</p>
+<p>Bonus points to yui3 - I did 0 testing with mobile, everything worked on ios the first time i tried it. an android browser crashed :) I&rsquo;ve disabled preview-on-typing in mobile - that feature didn&rsquo;t make sense for the screen size. And that seems to have fixed the problem on android.</p>
+<div>Last month I was <a href="http://www.yearonelabs.com/google-hackathon-recap/">introduced</a> to google app engine, - I didn&rsquo;t have much to do with the backend work at the time (pretty much <a href="https://gist.github.com/829000">copy paste</a>), but I liked what i saw. So I decided to give it a shot for this project, and I have to say I love it. It&rsquo;s dead easy to get started serving up static files, comes with a good tool (<a>os x</a>) for running your app locally and deploying. No hassle server. It&rsquo;s possible I might hit the quota limits, but that would be a good problem to have.</div>
+<p>With (very) little knowledge of python, I was able to glue together a working backend - twitter oAuth (thanks <a href="https://github.com/mikeknapp/">mikeknapp</a>) + api, user session(thanks <a href="https://github.com/dound">dound</a>). Overall, I find  myself liking python, and had a fairly easy time of it. The biggest hiccup was missing that you need .items() on a dictionary when iterating. And that I lack experience with python debugging. i &lt;3 named args, and think <strong>doc</strong> is just a swell idea.</p>
+<p>One part of the idea is I want an easy to play with twitter framework, where I can just focus on the front end. In the end, I think i succeeded, and when I find the time &amp; know a bit more I will extract and clean up that portion with some clear instructions for deploying. I think it might be handy for some people.</p>
+<p>The final tool pretty much matches what I first imagined.</p>
+<p>[[posterous-content:grxsoxxClhCBxzEvjchj]]</p>
+<p>I ended up removing &ldquo;edit individual tweets before posting&rdquo; functionality - seemed unnecessary. The auto-splitting worked better than i thought it would, so the preview seemed enough. Link shortening also works pretty well. There&rsquo;s a few other features that I&rsquo;d like to add at some point - direct messages being top of the list.</p>
+<p>As for the next step, but I&rsquo;m thinking it might be fun to find a designer on <a href="http://forrst.com">forrst.com</a> who likes the app idea, and would like to do a reskin, and run an a/b test against my design.</p>
+<p>You can go ahead and <a href="http://bigbigtweet.appspot.com">kick the tires</a> - you don&rsquo;t have to login to try out the multi-tweet preview function. Just start typing.</p>
+<p>Let me know what you think.</p>
+<p>ka-kaw!</p>
+<p>ps: you can follow <a href="http://www.twitter.com/big_big_tweet">@big_big_tweet</a> for updates, or <a href="http://www.twitter.com/meeech">me</a>, for general nonsense.</p>

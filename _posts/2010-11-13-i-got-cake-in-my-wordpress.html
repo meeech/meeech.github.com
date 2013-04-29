@@ -1,0 +1,17 @@
+---
+layout: post
+title: i got cake in my wordpress
+published: true
+---
+<p>[[posterous-content:HysIACnjzwkalFzDhrme]]Decided to open the <a href="https://github.com/meeech/expozine">code</a> for the <a href="http://www.expozine.ca">expozine</a> this year. Basically redid it all.&nbsp;year to year, it was a find/replace type job, of some of my earliest php - it wasn't partiularly pretty. &nbsp;</p>
+<p>Anyhoo, it's <a href="http://wordpress.org/">Wordpress</a> driving the pages &amp; posts, and a <a href="http://cakephp.org/">CakePHP</a> (1.3) app handling exhibitors, registration and sponsors. &nbsp;</p>
+<p>We're using the Wordpress plugin <a href="http://www.wpml.org">WPML</a> for the multilingual side of things.</p>
+<p>I'm putting it up here mainly in case it helps anyone else get wordpress &amp; cake playing together.</p>
+<p>Uses some .htaccess rewrites to route things to wordpress install in webroot, and in the <a href="https://github.com/meeech/expozine/blob/master/webroot/wp_engine/wp-content/themes/expozine/functions.php#L41-50">functions.php</a> of the expozine theme, you'll see we just fetch the fragments we need from cake to display sponsors &amp; exhibitors.&nbsp;</p>
+<p><strong>Why not use the custom post types/taxonomy in wordpress?&nbsp;</strong></p>
+<p>On the surface, it looked like custom post types would be fine. But at the time, I couldn't find any clear answers that I could do what I needed to, including making it bilingual ( one of my biggest gripes with wp - the docs/codex - eg: sometime I search for a problem, and you find stuff from WP 1.5. I feel like they should have a docs tzar :) ).</p>
+<p>WPML wasn't clear at the time (it's been updated the last few months I think). I didn't have the time to go down that rabbit hole. And it's pretty some simple relational data, and form validation. Getting that portion of the site up fast was the motivation.</p>
+<p>So the old pages from the site were thrown into cake pages, and Wordpress was added after.&nbsp;</p>
+<p>If I have to do this again, I think i would move the cake install to a subdomain, and just install wp on www. That should be the simpler solution. Just in this case, I started with the cake driven side.&nbsp;Or, who knows - i may have reason to dive further into wp, in which case, might just go with custom post types. I've since learnt what I want to do can pretty much be done all in wp.</p>
+<p>So, if you are interested in this topic, or looking for some help, check out the full&nbsp;<a href="https://github.com/meeech/expozine#readme">readme</a>. Any feedback on the <a href="https://github.com/meeech/expozine">solution</a> is welcome as well.&nbsp;</p>
+<p>&nbsp;</p>

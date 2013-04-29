@@ -1,0 +1,43 @@
+---
+layout: post
+title: Sorting an array of objects in js
+published: true
+---
+<p>There&rsquo;s 2 ways I know of to sort an array of object according to a property on the object.</p>
+
+<p>The first would be to modify the toString on an object.  Given an array of object, you can do:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>Object.prototype.<span class="function">toString</span> = <span class="keyword">function</span>() {
+ <span class="keyword">return</span> <span class="local-variable">this</span>.name;
+};
+random_objects.sort();</pre></div>
+</div>
+
+
+<p>The second way would be to pass in a function sort()</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>random_objects.sort(<span class="keyword">function</span>(a, b) {
+    <span class="keyword">if</span> (a.name &lt; b.name) {
+        <span class="keyword">return</span> -<span class="integer">1</span>;
+    }
+
+    <span class="keyword">if</span> (a.name == b.name) {
+        <span class="keyword">return</span> <span class="integer">0</span>;
+    }
+
+    <span class="keyword">if</span> (a.name &gt; b.name) {
+        <span class="keyword">return</span> <span class="integer">1</span>;
+    }
+});</pre></div>
+</div>
+
+
+<p>So, wondering what&rsquo;s fastest, I decided to try out <a href="http://jsperf.com/">jsperf</a> which is a site that makes it easy to set up perf tests for js.</p>
+
+<p>Turns out the answer to what&rsquo;s fastest depends on the browser you use. You can <a href="http://jsperf.com/sort-array-of-objects">run the tests</a> and see the results for yourself.</p>
+
+<p>Using the change toString() method, in Chrome it&rsquo;s slowest, but in Safari, it&rsquo;s the fastest.</p>
+
+<p>Naturally, in a real world example, I would use an object of my own, and not muck about with the base Object prototype. But the idea behind changes the toString prototype is you would change it depending on whatever sorting you needed. (ie: by id, time, tags).</p>

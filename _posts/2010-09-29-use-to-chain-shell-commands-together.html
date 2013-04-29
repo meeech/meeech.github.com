@@ -1,0 +1,15 @@
+---
+layout: post
+title: use && to chain shell commands together
+published: true
+---
+<p>I bounce between 2 versions of <a href="http://cakephp.org">cakephp</a> - some projects are still on 1.2.&nbsp;</p>
+<p>I use a git checkout of the project. Sick of always having to cd ~/Sites/cake and then git co cakephp1.X, even with completion.</p>
+<p>Simple solution.&nbsp;In most shells, you can chain commands together using &amp;&amp;, so it's simple enough to make an alias to combine the commands. takes 1 min. You can apply this to all sorts of everyday tasks.</p>
+<p>So, open your .bashrc (or wherever you prefer to put your shell aliases) and add (for example)</p>
+<div class="CodeRay">
+  <div class="code"><pre>alias cake12='cd ~/Sites/cake &amp;&amp; git co cakephp1.2 &amp;&amp; cd -'
+alias cake13='cd ~/Sites/cake &amp;&amp; git co cakephp1.3 &amp;&amp; cd -'</pre></div>
+</div>
+
+<p>Breaking this example down: switch to cakephp directory, checkout version X, and the cd - takes us back to the previous directory.&nbsp;</p>

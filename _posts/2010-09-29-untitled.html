@@ -1,0 +1,12 @@
+---
+layout: post
+title: Untitled
+published: true
+---
+<p>
+<p>If you are using zsh, with autocomplete and git, then you can autocomplete things like branch names.</p>
+<p>I aliased my git to <a href="http://github.com/icefox/git-achievements">git-achievements</a>, and the autocomplete of branches stopped working.</p>
+<p>Turns out the solution was just to add this</p>
+<p><a href="http://zshwiki.org/home/options/comp">setopt complete_aliases</a></p>
+<div>to my rc file. Now autocomplete is working again. Will see if there's any other side effects.&nbsp;</div>
+</p>
