@@ -12,9 +12,9 @@ posterous_slug: windows-vm-keeps-rebooting
 <p>The other day, I was setting up a win7 machine to grudgingly get ie9 up and running (for <a href="http://10k.aneventapart.com">10k submission</a>). In any case, set up a new VM with <a href="http://www.virtualbox.org/">Virtual Box</a>, use a  win7.vdi, and tried booting it up. Kept getting the blue screen of death (i know! funny - it&rsquo;s still in use) which would flash away before I could even read what the error was. Windows repair didn&rsquo;t do much. The same .vdi was working fine for a colleague.</p>
 <p>So, to help anyone else with this issue, try checking your Settings &gt; Storage on the VM. Could just be a hardware mismatch.</p>
 <h2>Before fixing it</h2>
-<p><img src="imgs/2010-08-11-windows-vm-keeps-rebooting/before-fix-vm.png"></p>
+<p><img src="/images/2010-08-11-windows-vm-keeps-rebooting/before-fix-vm.png"></p>
 <p>&nbsp;</p>
 <p>Turns out the new machine was created with the primary drive being a SATA. Switching it over to IDE fixed the problem right up. Here&rsquo;s a pic of the settings panel - set up correctly, at least in my case.</p>
 <h2>After fixing it</h2>
-<p><img src="imgs/2010-08-11-windows-vm-keeps-rebooting/after-fix-vm.png"></p>
+<p><img src="/images/2010-08-11-windows-vm-keeps-rebooting/after-fix-vm.png"></p>
 <p>If this doesn't help your problem, well, <a href="http://www.google.com/">best of luck</a>.</p>
