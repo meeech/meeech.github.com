@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: php | bits and bobs]]></title>
+  <link href="http://meeech.amihod.com/blog/categories/php/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-04-29T13:04:31-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
+  <author>
+    <name><![CDATA[Mitchell Amihod]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[new project: MailChimp TextMate Bundle]]></title>
+    <link href="http://meeech.amihod.com/new-project-mailchimp-textmate-bundle/"/>
+    <updated>2011-05-26T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/new-project-mailchimp-textmate-bundle</id>
+    <content type="html"><![CDATA[<p>Started a project a back in Feb - a MailChimp TextMate bundle.</p>
+
+
+<p>Overall, it's gone pretty well - I levelled up in bundle making.</p>
+
+
+<p>the project also couldn't have come at a better time - i'm working a lot with MailChimp on the campaign side, so I will be using the bundle a fair bit day-to-day.&nbsp;</p>
+
+
+<p>This&nbsp;<a href="http://blog.mailchimp.com/mailchimp-textmate-bundle/">post</a>&nbsp;up on the MailChimp blog has some good getting started instructions.</p>
+
+
+<p>Anyone interested in writing a textmate bundle with php should have a look at the <a href="https://github.com/mailchimp/MailChimp.tmbundle">code</a>&nbsp;- I'm pretty happy with the structure of this one.</p>
+
+
+<p>I already begun using some of the code &amp; lessons on the shopify tmbundle. :)</p>
+
+
+<p>&nbsp;</p>
+
+]]></content>
+  </entry>
+  
+</feed>

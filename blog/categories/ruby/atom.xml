@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ruby | bits and bobs]]></title>
+  <link href="http://meeech.amihod.com/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-04-29T13:04:31-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
+  <author>
+    <name><![CDATA[Mitchell Amihod]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[beginning ruby]]></title>
+    <link href="http://meeech.amihod.com/beginning-ruby/"/>
+    <updated>2010-11-25T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/beginning-ruby</id>
+    <content type="html"><![CDATA[<p>I decided a few weeks ago to pick up a new language. The choice was being between python and ruby. My day to day is php &amp; js, so this is all coming from that angle.</p>
+
+
+<p><strong>Python</strong></p>
+
+
+<p>I&rsquo;d like to play around with tools like <a href="https://github.com/hmason/tc">tc</a> and <a href="http://www.stashboard.org/">stashboard</a>. I&rsquo;ve heard with python, there&rsquo;s often only one way to do things - this has some appeal. But python seems to be transitioning right now from 2 to 3. Also, I don&rsquo;t have fond memories of the last time I dipped my toe in the python pool - the shallow end mind you. Though I suspect homebrew will make it easier next time around. And I&rsquo;ll be honest - the whole whitespace thing is a bit of a turnoff.</p>
+
+
+<p><strong>Ruby</strong></p>
+
+
+<p>The whole ruby ecosystem is very appealing. My experience with gems to date has been pretty smooth.  I use <a href="https://github.com/visionmedia/pomo/">some</a> gems via command line. It would be good to be able to hack on some of them. I&rsquo;m jealous of services like heroku. In the web domain, ruby seems to offer a lot of solutions to problems that matter to me. Not that PHP doesn&rsquo;t always have equivalent solutions - just that with ruby, it seems like a lot of the friction has been removed.</p>
+
+
+<p>Ruby it is.</p>
+
+
+<p>I&rsquo;ve been learning ruby over the last few weeks. I used the <a href="http://humblelittlerubybook.com/">humble little ruby book</a> as my tutor. Basically put in about 30 mins a day on a semi-regular basis, and was done in about three weeks.</p>
+
+
+<p>Overall, I was happy with the book. Once in a while I would encounter an example that didn&rsquo;t work - but those were just <a href="http://en.wikipedia.org/wiki/Boss_battle">boss battles</a> :) When I hit a broken example, at that point I had the info required to solve it. If you&rsquo;re already experienced with coding you&rsquo;ll be able to skim some portions.</p>
+
+
+<p>Some initial ruby impressions:</p>
+
+
+<p>I totally get why people go gaga over ruby - especially if you come in straight from php land. For me it wasn&rsquo;t the whole angels singing, double rainbow experience, but I think thats mainly due to my javascript experience. So I&rsquo;ve already had some of those wow moments that you might get coming straight from php to ruby.</p>
+
+
+<p><strong>$</strong> is reserved for globals, so you hardly see those around. When glancing at ruby code, I thought the heavy use of the pipe <strong>|</strong> would bother me, but in the end it really didn&rsquo;t.</p>
+
+
+<p>No <strong>;</strong> After a few weeks of ruby, I began to resent that I had to use the ; daily. Though oddly it bothers me more in php than js.</p>
+
+
+<ul>
+</ul>
+
+
+<p><strong>Losing return?</strong></p>
+
+
+<p>In ruby, return is implied in many cases. I don&rsquo;t know if I&rsquo;ll be able to get out of the habit of being explicit and using return, especially in the immediate future. I&rsquo;d hate to get in the habit of leaving out return, and when switching between langs, keep forgetting it.</p>
+
+
+<p><strong>Proc vs lambda. fight!</strong></p>
+
+
+<p>My initial reaction to Proc and lambda is that I lean towards lambda. I favour explicitness these days. Proc seems to lend itself to side effect bugs, especially for a newb. A return in a proc will break out of the calling method as well.</p>
+
+
+<p>Maybe more valuable in frameworks, where you can accept variable args? That would be one good reason for using proc over lambda. I&rsquo;m sure as I read through other people&rsquo;s code, or with more ruby xp, I&rsquo;ll see some use. One liners? Performance reasons? bueller?&hellip; bueller?&hellip;</p>
+
+
+<p><strong>Love unless</strong></p>
+
+
+<p>The readability is another big plus. Simple things - <strong>unless</strong> instead of <strong>if !=</strong>. Readability is  one of those things that&rsquo;s easy to dismiss, until you get hooked on it.</p>
+
+
+<p>Really liking statement modifiers. Being able to just append a condition to a statement is really nice.</p>
+
+
+<p>Inevitably, i find myself writing initially in longform,</p>
+
+
+<div class="CodeRay">
+  <div class="code"><pre>if(!File.exists?(filename)) {
+    File.open(filename, &quot;w&quot;)
+}</pre></div>
+</div>
+
+
+
+
+<p>but each pass it gets smaller, till you realize you can just write something like</p>
+
+
+<div class="CodeRay">
+  <div class="code"><pre>File.open(filename, &quot;w&quot;) unless File.exists?(filename)</pre></div>
+</div>
+
+
+
+
+<p>Yield looks interesting. I&rsquo;m curious to see how I use it.</p>
+
+
+<p>Anyhow, <a href="https://gist.github.com/713272">my first ruby script</a> - downloads your theme file from posterous, and saves it locally.</p>
+
+
+<p>Next on the ruby reading list - <a href="http://oreilly.com/catalog/9780596523015">Ruby Best Practices</a>. I suspect I&rsquo;ll do a skim through first, and a deeper reading once I have some ruby under my belt.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

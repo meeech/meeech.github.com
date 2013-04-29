@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>beginning ruby - bits and bobs</title>
+  <meta name="author" content="Mitchell Amihod">
+
+  
+  <meta name="description" content="I decided a few weeks ago to pick up a new language. The choice was being between python and ruby. My day to day is php &amp; js, so this is all &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://meeech.amihod.com/beginning-ruby">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="bits and bobs" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18711236-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">bits and bobs</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:meeech.amihod.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Beginning Ruby</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-25T00:00:00-05:00" pubdate data-updated="true">Nov 25<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I decided a few weeks ago to pick up a new language. The choice was being between python and ruby. My day to day is php &amp; js, so this is all coming from that angle.</p>
+<p><strong>Python</strong></p>
+<p>I&rsquo;d like to play around with tools like <a href="https://github.com/hmason/tc">tc</a> and <a href="http://www.stashboard.org/">stashboard</a>. I&rsquo;ve heard with python, there&rsquo;s often only one way to do things - this has some appeal. But python seems to be transitioning right now from 2 to 3. Also, I don&rsquo;t have fond memories of the last time I dipped my toe in the python pool - the shallow end mind you. Though I suspect homebrew will make it easier next time around. And I&rsquo;ll be honest - the whole whitespace thing is a bit of a turnoff.</p>
+<p><strong>Ruby</strong></p>
+<p>The whole ruby ecosystem is very appealing. My experience with gems to date has been pretty smooth.  I use <a href="https://github.com/visionmedia/pomo/">some</a> gems via command line. It would be good to be able to hack on some of them. I&rsquo;m jealous of services like heroku. In the web domain, ruby seems to offer a lot of solutions to problems that matter to me. Not that PHP doesn&rsquo;t always have equivalent solutions - just that with ruby, it seems like a lot of the friction has been removed.</p>
+<p>Ruby it is.</p>
+<p>I&rsquo;ve been learning ruby over the last few weeks. I used the <a href="http://humblelittlerubybook.com/">humble little ruby book</a> as my tutor. Basically put in about 30 mins a day on a semi-regular basis, and was done in about three weeks.</p>
+<p>Overall, I was happy with the book. Once in a while I would encounter an example that didn&rsquo;t work - but those were just <a href="http://en.wikipedia.org/wiki/Boss_battle">boss battles</a> :) When I hit a broken example, at that point I had the info required to solve it. If you&rsquo;re already experienced with coding you&rsquo;ll be able to skim some portions.</p>
+<p>Some initial ruby impressions:</p>
+<p>I totally get why people go gaga over ruby - especially if you come in straight from php land. For me it wasn&rsquo;t the whole angels singing, double rainbow experience, but I think thats mainly due to my javascript experience. So I&rsquo;ve already had some of those wow moments that you might get coming straight from php to ruby.</p>
+<p><strong>$</strong> is reserved for globals, so you hardly see those around. When glancing at ruby code, I thought the heavy use of the pipe <strong>|</strong> would bother me, but in the end it really didn&rsquo;t.</p>
+<p>No <strong>;</strong> After a few weeks of ruby, I began to resent that I had to use the ; daily. Though oddly it bothers me more in php than js.</p>
+<ul>
+</ul>
+<p><strong>Losing return?</strong></p>
+<p>In ruby, return is implied in many cases. I don&rsquo;t know if I&rsquo;ll be able to get out of the habit of being explicit and using return, especially in the immediate future. I&rsquo;d hate to get in the habit of leaving out return, and when switching between langs, keep forgetting it.</p>
+<p><strong>Proc vs lambda. fight!</strong></p>
+<p>My initial reaction to Proc and lambda is that I lean towards lambda. I favour explicitness these days. Proc seems to lend itself to side effect bugs, especially for a newb. A return in a proc will break out of the calling method as well.</p>
+<p>Maybe more valuable in frameworks, where you can accept variable args? That would be one good reason for using proc over lambda. I&rsquo;m sure as I read through other people&rsquo;s code, or with more ruby xp, I&rsquo;ll see some use. One liners? Performance reasons? bueller?&hellip; bueller?&hellip;</p>
+<p><strong>Love unless</strong></p>
+<p>The readability is another big plus. Simple things - <strong>unless</strong> instead of <strong>if !=</strong>. Readability is  one of those things that&rsquo;s easy to dismiss, until you get hooked on it.</p>
+<p>Really liking statement modifiers. Being able to just append a condition to a statement is really nice.</p>
+<p>Inevitably, i find myself writing initially in longform,</p>
+<div class="CodeRay">
+  <div class="code"><pre>if(!File.exists?(filename)) {
+    File.open(filename, &quot;w&quot;)
+}</pre></div>
+</div>
+
+<p>but each pass it gets smaller, till you realize you can just write something like</p>
+<div class="CodeRay">
+  <div class="code"><pre>File.open(filename, &quot;w&quot;) unless File.exists?(filename)</pre></div>
+</div>
+
+<p>Yield looks interesting. I&rsquo;m curious to see how I use it.</p>
+<p>Anyhow, <a href="https://gist.github.com/713272">my first ruby script</a> - downloads your theme file from posterous, and saves it locally.</p>
+<p>Next on the ruby reading list - <a href="http://oreilly.com/catalog/9780596523015">Ruby Best Practices</a>. I suspect I&rsquo;ll do a skim through first, and a deeper reading once I have some ruby under my belt.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Mitchell Amihod</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-25T00:00:00-05:00" pubdate data-updated="true">Nov 25<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/learning/'>learning</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://meeech.amihod.com/beginning-ruby/" data-via="meeech" data-counturl="http://meeech.amihod.com/beginning-ruby/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/34535034/" title="Previous Post: Untitled">&laquo; Untitled</a>
+      
+      
+        <a class="basic-alignment right" href="/v1-of-my-lego-iphone-stand/" title="Next Post: v1 of my lego iphone stand">v1 of my lego iphone stand &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/troubleshooting-ssl-cert-with-rbenvruby-193/">troubleshooting SSL cert with rbenv/ruby 1.9.3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/making-toolbar-buttons-that-respond-to-longpr/">Making toolbar buttons that respond to longpress in Titanium for iOS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/metafield-tip-dont-bother-with-modify-when-up/">Metafield tip: don't bother with Modify when updating Products</a>
+      </li>
+    
+      <li class="post">
+        <a href="/shopify-meetdrink-up/">Shopify Meet/Drink Up</a>
+      </li>
+    
+      <li class="post">
+        <a href="/new-project-mailchimp-textmate-bundle/">new project: MailChimp TextMate Bundle</a>
+      </li>
+    
+  </ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mitchell Amihod -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

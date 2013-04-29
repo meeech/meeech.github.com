@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: yui | bits and bobs]]></title>
+  <link href="http://meeech.amihod.com/blog/categories/yui/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-04-29T13:04:31-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
+  <author>
+    <name><![CDATA[Mitchell Amihod]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Untitled]]></title>
+    <link href="http://meeech.amihod.com/24436085/"/>
+    <updated>2010-07-28T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/24436085</id>
+    <content type="html"><![CDATA[<p><span style="color: #888888;"><a href="http://developer.yahoo.com/yui/3/api/Pollable.html">datasource.polling</a></span> calls are async, so they will stack if server is lagging.</p>
+
+
+<p> </p>
+
+]]></content>
+  </entry>
+  
+</feed>

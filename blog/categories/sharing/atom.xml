@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: sharing | bits and bobs]]></title>
+  <link href="http://meeech.amihod.com/blog/categories/sharing/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-04-29T13:04:31-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
+  <author>
+    <name><![CDATA[Mitchell Amihod]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Untitled]]></title>
+    <link href="http://meeech.amihod.com/34535034/"/>
+    <updated>2010-11-25T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/34535034</id>
+    <content type="html"><![CDATA[<p><a href="http://wikimediafoundation.org/wiki/Support_Wikipedia/en"><img src="http://upload.wikimedia.org/wikipedia/commons/4/41/Fundraising_2009-horizontal-thanks-en.png" border="0" alt="Support Wikipedia" /></a></p>
+
+]]></content>
+  </entry>
+  
+</feed>

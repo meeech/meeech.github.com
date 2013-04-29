@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: GT | bits and bobs]]></title>
+  <link href="http://meeech.amihod.com/blog/categories/gt/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-04-29T13:04:31-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
+  <author>
+    <name><![CDATA[Mitchell Amihod]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Shopify Meet/Drink Up]]></title>
+    <link href="http://meeech.amihod.com/shopify-meetdrink-up/"/>
+    <updated>2011-08-23T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/shopify-meetdrink-up</id>
+    <content type="html"><![CDATA[<p>Do you work with the Shopify e-com platform? You  in Montreal? Then join us (<a href="http://www.twitter.com/meeech">myself</a> and <a href="http://twitter.com/hunkybill">Dave Lazar</a>) for a meet &amp; drink! We&rsquo;ll be talking shop, trading tips, and other general silliness. All are welcome.</p>
+
+
+<p>Where: The Irish Embassy - <a href="http://maps.google.com/maps?q=1234+Rue+Bishop,+montreal&amp;gl=us&amp;z=16&amp;vpsrc=0">1234 Rue Bishop</a></p>
+
+
+<p>When: 6PM, Thursday September 1, 2011</p>
+
+
+<p>RSVP&rsquo;ing is not necessary, but a quick note <a href="http://www.twitter.com/meeech">@meeech</a> on twitter or via <a href="mailto:mitchell.amihod@gmail.com">email</a> to let me know you&rsquo;re planning to come will be helpful (to gauge how much space we need)</p>
+
+
+<p>(Should note this is in no way an official Shopify event. Just some local users having a meetup.)</p>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: zsh autocomplete tip | bits and bobs]]></title>
+  <link href="http://meeech.amihod.com/blog/categories/zsh-autocomplete-tip/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-04-29T13:04:31-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
+  <author>
+    <name><![CDATA[Mitchell Amihod]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Untitled]]></title>
+    <link href="http://meeech.amihod.com/29259613/"/>
+    <updated>2010-09-29T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/29259613</id>
+    <content type="html"><![CDATA[<p>
+<p>If you are using zsh, with autocomplete and git, then you can autocomplete things like branch names.</p>
+<p>I aliased my git to <a href="http://github.com/icefox/git-achievements">git-achievements</a>, and the autocomplete of branches stopped working.</p>
+<p>Turns out the solution was just to add this</p>
+<p><a href="http://zshwiki.org/home/options/comp">setopt complete_aliases</a></p>
+<div>to my rc file. Now autocomplete is working again. Will see if there's any other side effects.&nbsp;</div>
+</p>
+
+]]></content>
+  </entry>
+  
+</feed>

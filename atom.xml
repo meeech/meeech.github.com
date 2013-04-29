@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[bits and bobs]]></title>
+  <link href="http://meeech.amihod.com/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-04-29T13:04:31-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
+  <author>
+    <name><![CDATA[Mitchell Amihod]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[troubleshooting SSL cert with rbenv/ruby 1.9.3]]></title>
+    <link href="http://meeech.amihod.com/troubleshooting-ssl-cert-with-rbenvruby-193/"/>
+    <updated>2012-12-27T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/troubleshooting-ssl-cert-with-rbenvruby-193</id>
+    <content type="html"><![CDATA[<p>Using rbenv to run ruby 1.9.3-p327 on OSX 10.8, I kept hitting this error in a rails app I was working on: <code>Faraday::Error::ConnectionFailed (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):</code> This wasn&rsquo;t happening under system ruby 1.8.7. I found a lot of rvm specific info, but not much on fixing for rbenv.</p>
+<p>First (unsuccessful) solution I tried installing updated openssl (via brew) &amp; to rebuild ruby using <code>CONFIGURE_OPTS=--with-openssl-dir=`brew --prefix openssl` rbenv install 1.9.3-p327</code>. Again, no luck - same error.</p>
+<p>What finally worked was downloading the cacert.pem from <a href="http://curl.haxx.se/ca/">http://curl.haxx.se/ca/</a>. Install it where you want (i stuck it in /usr/local/etc/). Then, just add <code>export SSL_CERT_FILE=/usr/local/etc/cacert.pem</code> to your .zshrc (or .bashrc) and you will be good to go!</p>
+<p>Hope this helps save you some time. If you&rsquo;ve discovered a better way, share it in the comments!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Making toolbar buttons that respond to longpress in Titanium for iOS]]></title>
+    <link href="http://meeech.amihod.com/making-toolbar-buttons-that-respond-to-longpr/"/>
+    <updated>2012-05-15T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/making-toolbar-buttons-that-respond-to-longpr</id>
+    <content type="html"><![CDATA[<p>Turns out making a toolbar button that responds to longpress is not as straighforward as you&#8217;d think. Just making a button, and listening for longpress event doesn&#8217;t work once the button is put in a toolbar. &nbsp;The trick turns out to be you need to put the button in a view. Here&#8217;s the example code:</p>
+<p><script src="https://gist.github.com/2705664.js"></script></p>
+<p>The only drawback to using this method is you can&#8217;t use &#8216;systemButton&#8217; styles.</p>
+<p>&nbsp;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Metafield tip: don't bother with Modify when updating Products]]></title>
+    <link href="http://meeech.amihod.com/metafield-tip-dont-bother-with-modify-when-up/"/>
+    <updated>2011-10-14T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/metafield-tip-dont-bother-with-modify-when-up</id>
+    <content type="html"><![CDATA[<p>Been spending some time looking into <a href="http://api.shopify.com/metafield.html">metafields</a>.</p>
+<p>Here&rsquo;s something worth knowing to make your life easier.</p>
+<p>When updating metafields on a product, turns out <a href="http://api.shopify.com/metafield.html#create">Create</a> acts like Modify or Create if it doesn&rsquo;t exist. As long as the namespace and key match an existing metafield on the product, the value will be updated, otherwise it will be created.</p>
+<p>If you know of a good case when to use the Modify call, I&rsquo;d love to hear it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Shopify Meet/Drink Up]]></title>
+    <link href="http://meeech.amihod.com/shopify-meetdrink-up/"/>
+    <updated>2011-08-23T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/shopify-meetdrink-up</id>
+    <content type="html"><![CDATA[<p>Do you work with the Shopify e-com platform? You  in Montreal? Then join us (<a href="http://www.twitter.com/meeech">myself</a> and <a href="http://twitter.com/hunkybill">Dave Lazar</a>) for a meet &amp; drink! We&rsquo;ll be talking shop, trading tips, and other general silliness. All are welcome.</p>
+<p>Where: The Irish Embassy - <a href="http://maps.google.com/maps?q=1234+Rue+Bishop,+montreal&amp;gl=us&amp;z=16&amp;vpsrc=0">1234 Rue Bishop</a></p>
+<p>When: 6PM, Thursday September 1, 2011</p>
+<p>RSVP&rsquo;ing is not necessary, but a quick note <a href="http://www.twitter.com/meeech">@meeech</a> on twitter or via <a href="mailto:mitchell.amihod@gmail.com">email</a> to let me know you&rsquo;re planning to come will be helpful (to gauge how much space we need)</p>
+<p>(Should note this is in no way an official Shopify event. Just some local users having a meetup.)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[new project: MailChimp TextMate Bundle]]></title>
+    <link href="http://meeech.amihod.com/new-project-mailchimp-textmate-bundle/"/>
+    <updated>2011-05-26T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/new-project-mailchimp-textmate-bundle</id>
+    <content type="html"><![CDATA[<p>Started a project a back in Feb - a MailChimp TextMate bundle.</p>
+<p>Overall, it&#8217;s gone pretty well - I levelled up in bundle making.</p>
+<p>the project also couldn&#8217;t have come at a better time - i&#8217;m working a lot with MailChimp on the campaign side, so I will be using the bundle a fair bit day-to-day.&nbsp;</p>
+<p>This&nbsp;<a href="http://blog.mailchimp.com/mailchimp-textmate-bundle/">post</a>&nbsp;up on the MailChimp blog has some good getting started instructions.</p>
+<p>Anyone interested in writing a textmate bundle with php should have a look at the <a href="https://github.com/mailchimp/MailChimp.tmbundle">code</a>&nbsp;- I&#8217;m pretty happy with the structure of this one.</p>
+<p>I already begun using some of the code &amp; lessons on the shopify tmbundle. :)</p>
+<p>&nbsp;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[update]]></title>
+    <link href="http://meeech.amihod.com/update/"/>
+    <updated>2011-05-19T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/update</id>
+    <content type="html"><![CDATA[<p>Just a little update. Been a bit silent over here, since pretty deep in <a href="http://www.happystuffapp.com" title="Happy Stuff">Happy Stuff</a> these days.</p>
+<p>Happy Stuff is based around the idea that many of us have things we&#8217;re done with, but they still work, so we don&#8217;t want to throw them out. Someone else could use that stuff, you just don&#8217;t know who.&nbsp;Happy Stuff is the easiest way to connect you to people in your area that want that stuff.</p>
+<p>Come on over and check it <a href="http://www.happystuffapp.com">out</a>. We&#8217;re in closed testing right now, but sign up and we&#8217;ll let you know when we letting people in your area in. You can also follow <a href="http://twitter.com/happystuff">@happystuff</a> for updates.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[does not contain a target named ]]></title>
+    <link href="http://meeech.amihod.com/does-not-contain-a-target-named/"/>
+    <updated>2011-04-28T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/does-not-contain-a-target-named</id>
+    <content type="html"><![CDATA[<p>Note to self (and others):&nbsp;</p>
+<p>When making a Titanium mobile project if you get the error of style:</p>
+<p><strong>The project &#8216;FooApp.xcodeproj&#8217; does not contain a target named &#8216;FooApp&#8217;</strong></p>
+<p>The problem is Name needs to match the last part of the Application Id.</p>
+<p><img src="https://img.skitch.com/20110428-j3gh44u4ekj6ni3wtgc97nsshm.jpg" alt="" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[how to tile when printing on osx]]></title>
+    <link href="http://meeech.amihod.com/how-to-tile-when-printing-on-osx/"/>
+    <updated>2011-04-08T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/how-to-tile-when-printing-on-osx</id>
+    <content type="html"><![CDATA[<p>I needed to print a pdf in tiles for my dad - some blueprints. Since the above subject of this post, when searched, didn&#8217;t offer anything useful, i&#8217;m feeding the beast with the winning entry - Tiler. <a href="http://www.mindcad.com/tiler.html">http://www.mindcad.com/tiler.html</a></p>
+<p>Thanks to @fonginator for the link.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[my leaving godaddy strategy]]></title>
+    <link href="http://meeech.amihod.com/my-leaving-godaddy-strategy/"/>
+    <updated>2011-04-04T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/my-leaving-godaddy-strategy</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve decided on how I will leave godaddy, and spread out the pain.</p>
+<p>While initially, I thought I would just transfer everything in one shot, that&#8217;s actually pretty inconvenient.</p>
+<p>So in the end, I&#8217;m just turning off auto-renew, and will transfer each one as they come due. I&#8217;ll be using <a href="https://www.domainsatcost.ca">Domainsatcost.ca</a>, who have been working out well for me.</p>
+<p>Lost on how to transfer from godaddy? When you looking at your domains detail page, you need to click Manage next to the Locked status, and unlock it, then Send By Email for the Authorization code.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[pickydomains.com followup]]></title>
+    <link href="http://meeech.amihod.com/pickydomainscom-followup/"/>
+    <updated>2011-04-02T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/pickydomainscom-followup</id>
+    <content type="html"><![CDATA[<p>So, in the end, pickydomains.com did come up with a few ok names, but we finally decided to go in another direction. I&#8217;ll probably give it another shot in the future if I find myself in the same bind.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[encyclopedia brown and the case of the opus card that stopped working like normal]]></title>
+    <link href="http://meeech.amihod.com/encyclopedia-brown-and-the-case-of-the-opus-c/"/>
+    <updated>2011-03-10T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/encyclopedia-brown-and-the-case-of-the-opus-c</id>
+    <content type="html"><![CDATA[<p>A few days ago, my opus card stopped working while in my wallet. I started having to take my card out, and for the life of me, couldnt figure out why.</p>
+<p>This has been going on a few days now, and was driving me crazy. At first I thought it was the opus card. Even though i only take it out once a month, it was somehow degrading.&nbsp;</p>
+<p>I realized today the problem was a new credit card. It must have some sort a chip in it that the turnstiles are picking up, so they get confused.</p>
+<p>I just turned my cc 180&ordm; and it seems to have resolved the problem - the chip in the cc was overlapping the position of the opus card, and even though the cc was further away from the turnstile, it was still being picked up.</p>
+<p>case closed.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Untitled]]></title>
+    <link href="http://meeech.amihod.com/44723415/"/>
+    <updated>2011-03-02T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/44723415</id>
+    <content type="html"><![CDATA[<p>As most of you know by now, i&#8217;ve started a <a href="http://www.yearonelabs.com/year-one-labs-invests-in-dov-and-mitch-amihod/">new venture with my brother</a>.</p>
+<p>There is nothing new or unique in one problem we are having: naming. Finding a name is hard. Finding a good domain name is hard^2. Just ask the folks over at <a href="http://shwowp.com/">shwowp</a>&nbsp;:)&nbsp;</p>
+<p>When doing some research into the hyphen-in-domain-name-issue, I came across <a href="http://www.pickydomains.com/">pickydomains.com</a>&nbsp;and have decided to&nbsp;give it a shot, and I&#8217;ll report back whether it was successful or not.</p>
+<p>stay tuned&#8230;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[update to shopify textmate bundle]]></title>
+    <link href="http://meeech.amihod.com/update-to-shopify-textmate-bundle/"/>
+    <updated>2011-02-20T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/update-to-shopify-textmate-bundle</id>
+    <content type="html"><![CDATA[<p>Just updated the <a href="https://github.com/meeech/shopify.tmbundle#readme">Shopify Textmate bundle</a>. It now has support for a config file - so you can have multiple shops in a project. The most obvious use case is a dev shop and a live shop, and switching between them.</p>
+<p>It&#8217;s a feature I&#8217;ve wanted to see for a bit, but I had to do some R&amp;D on part of it, and never really had a chance (the effor to benefit ratio wasn&#8217;t there, since I&#8217;m not doing a ton of template work these days, and there&#8217;s so many interesting things to work on :) ).</p>
+<p>However, I just started work on a cool new project which has me working on a new tmbundle, and I leveled up on bundle development, so I knew what how to do the switching properly now. The bundle still works with the old method, so any users of the bundle shouldn&#8217;t notice a difference.&nbsp;</p>
+<p>Anyhow, hope it helps people.</p>
+<p>m.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[building big big tweet]]></title>
+    <link href="http://meeech.amihod.com/43210729/"/>
+    <updated>2011-02-16T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/43210729</id>
+    <content type="html"><![CDATA[<p>Some story on <a href="http://bigbigtweet.appspot.com">big big tweet</a>.</p>
+<p>A few weeks ago I had this idea for a tool which would allow me to easily post multi-tweet tweets on twitter. Here&rsquo;s the original sketch:</p>
+<p><img src="http://meeech.amihod.com/images/2011-02-16-43210729/IMG_0496.jpg"></p>
+<p>I was pretty convinced the front end could be pieced together in about a day.</p>
+<p>Overall, I&rsquo;m pretty happy both with what I learned, and what I put together in 1 weekend and 3 nights of <a href="http://developer.yahoo.com/yui/3/">yui3</a>, python, <a href="http://code.google.com/appengine/">google app engine</a>, twitter api.</p>
+<p><a href="http://developer.yahoo.com/yui/3/">yui3</a>&nbsp;was, as always, a pleasure to work with. The new&nbsp;<a href="http://developer.yahoo.com/yui/3/cssgrids/">grids system</a>&nbsp;is great. Learnt about the synthetic&nbsp;<a href="http://developer.yahoo.com/yui/3/api/YUI.html#event_valueChange">valueChange event</a>, which is handy when you are watching a textarea. yui3 is full of all sorts of wins, so if you&rsquo;re doing front end app development and haven&rsquo;t checked it out, you&rsquo;re doing yourself a disservice.</p>
+<p>Pretty pleased with the&nbsp;<a href="https://gist.github.com/828919">code</a>&nbsp;to break up the text into tweet sized chunks. I think i&rsquo;ve finally broken through to where recursion feels natural to think about. You can see the&nbsp;<a href="http://bigbigtweet.appspot.com/js/main.js">full script</a>, in context. There&rsquo;s room for improvement, but it doesn&rsquo;t smell too bad. :)</p>
+<p>Bonus points to yui3 - I did 0 testing with mobile, everything worked on ios the first time i tried it. an android browser crashed :) I&rsquo;ve disabled preview-on-typing in mobile - that feature didn&rsquo;t make sense for the screen size. And that seems to have fixed the problem on android.</p>
+<div>Last month I was <a href="http://www.yearonelabs.com/google-hackathon-recap/">introduced</a> to google app engine, - I didn&rsquo;t have much to do with the backend work at the time (pretty much <a href="https://gist.github.com/829000">copy paste</a>), but I liked what i saw. So I decided to give it a shot for this project, and I have to say I love it. It&rsquo;s dead easy to get started serving up static files, comes with a good tool (<a>os x</a>) for running your app locally and deploying. No hassle server. It&rsquo;s possible I might hit the quota limits, but that would be a good problem to have.</div>
+<p>With (very) little knowledge of python, I was able to glue together a working backend - twitter oAuth (thanks <a href="https://github.com/mikeknapp/">mikeknapp</a>) + api, user session(thanks <a href="https://github.com/dound">dound</a>). Overall, I find  myself liking python, and had a fairly easy time of it. The biggest hiccup was missing that you need .items() on a dictionary when iterating. And that I lack experience with python debugging. i &lt;3 named args, and think <strong>doc</strong> is just a swell idea.</p>
+<p>One part of the idea is I want an easy to play with twitter framework, where I can just focus on the front end. In the end, I think i succeeded, and when I find the time &amp; know a bit more I will extract and clean up that portion with some clear instructions for deploying. I think it might be handy for some people.</p>
+<p>The final tool pretty much matches what I first imagined.</p>
+<p><img src="http://meeech.amihod.com/images/2011-02-16-43210729/Screen_shot_2011-02-16_at_2.58.04_AM.png"></p>
+<p>I ended up removing &ldquo;edit individual tweets before posting&rdquo; functionality - seemed unnecessary. The auto-splitting worked better than i thought it would, so the preview seemed enough. Link shortening also works pretty well. There&rsquo;s a few other features that I&rsquo;d like to add at some point - direct messages being top of the list.</p>
+<p>As for the next step, but I&rsquo;m thinking it might be fun to find a designer on <a href="http://forrst.com">forrst.com</a> who likes the app idea, and would like to do a reskin, and run an a/b test against my design.</p>
+<p>You can go ahead and <a href="http://bigbigtweet.appspot.com">kick the tires</a> - you don&rsquo;t have to login to try out the multi-tweet preview function. Just start typing.</p>
+<p>Let me know what you think.</p>
+<p>ka-kaw!</p>
+<p>ps: you can follow <a href="http://www.twitter.com/big_big_tweet">@big_big_tweet</a> for updates, or <a href="http://www.twitter.com/meeech">me</a>, for general nonsense.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[v1 of my lego iphone stand]]></title>
+    <link href="http://meeech.amihod.com/v1-of-my-lego-iphone-stand/"/>
+    <updated>2011-02-07T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/v1-of-my-lego-iphone-stand</id>
+    <content type="html"><![CDATA[<p><img src="http://meeech.amihod.com/images/2011-02-07-v1-of-my-lego-iphone-stand/IMG_4350.JPG"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[beginning ruby]]></title>
+    <link href="http://meeech.amihod.com/beginning-ruby/"/>
+    <updated>2010-11-25T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/beginning-ruby</id>
+    <content type="html"><![CDATA[<p>I decided a few weeks ago to pick up a new language. The choice was being between python and ruby. My day to day is php &amp; js, so this is all coming from that angle.</p>
+<p><strong>Python</strong></p>
+<p>I&rsquo;d like to play around with tools like <a href="https://github.com/hmason/tc">tc</a> and <a href="http://www.stashboard.org/">stashboard</a>. I&rsquo;ve heard with python, there&rsquo;s often only one way to do things - this has some appeal. But python seems to be transitioning right now from 2 to 3. Also, I don&rsquo;t have fond memories of the last time I dipped my toe in the python pool - the shallow end mind you. Though I suspect homebrew will make it easier next time around. And I&rsquo;ll be honest - the whole whitespace thing is a bit of a turnoff.</p>
+<p><strong>Ruby</strong></p>
+<p>The whole ruby ecosystem is very appealing. My experience with gems to date has been pretty smooth.  I use <a href="https://github.com/visionmedia/pomo/">some</a> gems via command line. It would be good to be able to hack on some of them. I&rsquo;m jealous of services like heroku. In the web domain, ruby seems to offer a lot of solutions to problems that matter to me. Not that PHP doesn&rsquo;t always have equivalent solutions - just that with ruby, it seems like a lot of the friction has been removed.</p>
+<p>Ruby it is.</p>
+<p>I&rsquo;ve been learning ruby over the last few weeks. I used the <a href="http://humblelittlerubybook.com/">humble little ruby book</a> as my tutor. Basically put in about 30 mins a day on a semi-regular basis, and was done in about three weeks.</p>
+<p>Overall, I was happy with the book. Once in a while I would encounter an example that didn&rsquo;t work - but those were just <a href="http://en.wikipedia.org/wiki/Boss_battle">boss battles</a> :) When I hit a broken example, at that point I had the info required to solve it. If you&rsquo;re already experienced with coding you&rsquo;ll be able to skim some portions.</p>
+<p>Some initial ruby impressions:</p>
+<p>I totally get why people go gaga over ruby - especially if you come in straight from php land. For me it wasn&rsquo;t the whole angels singing, double rainbow experience, but I think thats mainly due to my javascript experience. So I&rsquo;ve already had some of those wow moments that you might get coming straight from php to ruby.</p>
+<p><strong>$</strong> is reserved for globals, so you hardly see those around. When glancing at ruby code, I thought the heavy use of the pipe <strong>|</strong> would bother me, but in the end it really didn&rsquo;t.</p>
+<p>No <strong>;</strong> After a few weeks of ruby, I began to resent that I had to use the ; daily. Though oddly it bothers me more in php than js.</p>
+<ul>
+</ul>
+<p><strong>Losing return?</strong></p>
+<p>In ruby, return is implied in many cases. I don&rsquo;t know if I&rsquo;ll be able to get out of the habit of being explicit and using return, especially in the immediate future. I&rsquo;d hate to get in the habit of leaving out return, and when switching between langs, keep forgetting it.</p>
+<p><strong>Proc vs lambda. fight!</strong></p>
+<p>My initial reaction to Proc and lambda is that I lean towards lambda. I favour explicitness these days. Proc seems to lend itself to side effect bugs, especially for a newb. A return in a proc will break out of the calling method as well.</p>
+<p>Maybe more valuable in frameworks, where you can accept variable args? That would be one good reason for using proc over lambda. I&rsquo;m sure as I read through other people&rsquo;s code, or with more ruby xp, I&rsquo;ll see some use. One liners? Performance reasons? bueller?&hellip; bueller?&hellip;</p>
+<p><strong>Love unless</strong></p>
+<p>The readability is another big plus. Simple things - <strong>unless</strong> instead of <strong>if !=</strong>. Readability is  one of those things that&rsquo;s easy to dismiss, until you get hooked on it.</p>
+<p>Really liking statement modifiers. Being able to just append a condition to a statement is really nice.</p>
+<p>Inevitably, i find myself writing initially in longform,</p>
+<div class="CodeRay">
+  <div class="code"><pre>if(!File.exists?(filename)) {
+    File.open(filename, &quot;w&quot;)
+}</pre></div>
+</div>
+
+<p>but each pass it gets smaller, till you realize you can just write something like</p>
+<div class="CodeRay">
+  <div class="code"><pre>File.open(filename, &quot;w&quot;) unless File.exists?(filename)</pre></div>
+</div>
+
+<p>Yield looks interesting. I&rsquo;m curious to see how I use it.</p>
+<p>Anyhow, <a href="https://gist.github.com/713272">my first ruby script</a> - downloads your theme file from posterous, and saves it locally.</p>
+<p>Next on the ruby reading list - <a href="http://oreilly.com/catalog/9780596523015">Ruby Best Practices</a>. I suspect I&rsquo;ll do a skim through first, and a deeper reading once I have some ruby under my belt.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Untitled]]></title>
+    <link href="http://meeech.amihod.com/34535034/"/>
+    <updated>2010-11-25T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/34535034</id>
+    <content type="html"><![CDATA[<p><a href="http://wikimediafoundation.org/wiki/Support_Wikipedia/en"><img src="http://upload.wikimedia.org/wikipedia/commons/4/41/Fundraising_2009-horizontal-thanks-en.png" border="0" alt="Support Wikipedia" /></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[chocolate luuuv]]></title>
+    <link href="http://meeech.amihod.com/chocolate-luuuv/"/>
+    <updated>2010-11-15T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/chocolate-luuuv</id>
+    <content type="html"><![CDATA[<p>An experiment with a microwave and some extra cake batter. Tasted way better than it looks. That light coloured strata at the bottom is a yogurt layer.&nbsp;</p>
+
+<img src="http://meeech.amihod.com/images/2010-11-15-chocolate-luuuv/IMG_4131.JPG">
+<img src="http://meeech.amihod.com/images/2010-11-15-chocolate-luuuv/IMG_4136.JPG">
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Untitled]]></title>
+    <link href="http://meeech.amihod.com/33585980/"/>
+    <updated>2010-11-15T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/33585980</id>
+    <content type="html"><![CDATA[<p>So instead of writing a novel for november, i&rsquo;ve committed to finishing some projects &amp; posts that have been sitting around. Or killing them. Usually, there&rsquo;s just one or two little details holding much of it back. Like with <a href="https://github.com/plank/pdfize">PDFize</a> - It&rsquo;s been done for a while, but I knew I had a few hours of tweaking the readme, making sure everything worked as advertised, and trying it out in 1.3. It&rsquo;s still not as &lsquo;complete&rsquo; as I would like, but at least it&rsquo;s out there and can maybe help someone now. Ideally, when I find time, i&rsquo;d like to finish up a helper to complement it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Untitled]]></title>
+    <link href="http://meeech.amihod.com/33474195/"/>
+    <updated>2010-11-14T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/33474195</id>
+    <content type="html"><![CDATA[<p>i saw  <a href="http://www.time.com/time/specials/packages/completelist/0,29569,2028734,00.html">beck</a> on this list, and my mind automatically went to  <a href="http://www.time.com/time/subscriber/personoftheyear/archive/stories/1938.html">this</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

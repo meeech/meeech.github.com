@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: appcelerator | bits and bobs]]></title>
+  <link href="http://meeech.amihod.com/blog/categories/appcelerator/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-04-29T13:04:31-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
+  <author>
+    <name><![CDATA[Mitchell Amihod]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[does not contain a target named ]]></title>
+    <link href="http://meeech.amihod.com/does-not-contain-a-target-named/"/>
+    <updated>2011-04-28T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/does-not-contain-a-target-named</id>
+    <content type="html"><![CDATA[<p>Note to self (and others):&nbsp;</p>
+
+
+<p>When making a Titanium mobile project if you get the error of style:</p>
+
+
+<p><strong>The project 'FooApp.xcodeproj' does not contain a target named 'FooApp'</strong></p>
+
+
+<p>The problem is Name needs to match the last part of the Application Id.</p>
+
+
+<p><img src="https://img.skitch.com/20110428-j3gh44u4ekj6ni3wtgc97nsshm.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
+  
+</feed>

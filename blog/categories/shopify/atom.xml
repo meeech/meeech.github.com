@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: shopify | bits and bobs]]></title>
+  <link href="http://meeech.amihod.com/blog/categories/shopify/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-04-29T13:04:31-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
+  <author>
+    <name><![CDATA[Mitchell Amihod]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Metafield tip: don't bother with Modify when updating Products]]></title>
+    <link href="http://meeech.amihod.com/metafield-tip-dont-bother-with-modify-when-up/"/>
+    <updated>2011-10-14T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/metafield-tip-dont-bother-with-modify-when-up</id>
+    <content type="html"><![CDATA[<p>Been spending some time looking into <a href="http://api.shopify.com/metafield.html">metafields</a>.</p>
+
+
+<p>Here&rsquo;s something worth knowing to make your life easier.</p>
+
+
+<p>When updating metafields on a product, turns out <a href="http://api.shopify.com/metafield.html#create">Create</a> acts like Modify or Create if it doesn&rsquo;t exist. As long as the namespace and key match an existing metafield on the product, the value will be updated, otherwise it will be created.</p>
+
+
+<p>If you know of a good case when to use the Modify call, I&rsquo;d love to hear it.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Shopify Meet/Drink Up]]></title>
+    <link href="http://meeech.amihod.com/shopify-meetdrink-up/"/>
+    <updated>2011-08-23T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/shopify-meetdrink-up</id>
+    <content type="html"><![CDATA[<p>Do you work with the Shopify e-com platform? You  in Montreal? Then join us (<a href="http://www.twitter.com/meeech">myself</a> and <a href="http://twitter.com/hunkybill">Dave Lazar</a>) for a meet &amp; drink! We&rsquo;ll be talking shop, trading tips, and other general silliness. All are welcome.</p>
+
+
+<p>Where: The Irish Embassy - <a href="http://maps.google.com/maps?q=1234+Rue+Bishop,+montreal&amp;gl=us&amp;z=16&amp;vpsrc=0">1234 Rue Bishop</a></p>
+
+
+<p>When: 6PM, Thursday September 1, 2011</p>
+
+
+<p>RSVP&rsquo;ing is not necessary, but a quick note <a href="http://www.twitter.com/meeech">@meeech</a> on twitter or via <a href="mailto:mitchell.amihod@gmail.com">email</a> to let me know you&rsquo;re planning to come will be helpful (to gauge how much space we need)</p>
+
+
+<p>(Should note this is in no way an official Shopify event. Just some local users having a meetup.)</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[update to shopify textmate bundle]]></title>
+    <link href="http://meeech.amihod.com/update-to-shopify-textmate-bundle/"/>
+    <updated>2011-02-20T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/update-to-shopify-textmate-bundle</id>
+    <content type="html"><![CDATA[<p>Just updated the <a href="https://github.com/meeech/shopify.tmbundle#readme">Shopify Textmate bundle</a>. It now has support for a config file - so you can have multiple shops in a project. The most obvious use case is a dev shop and a live shop, and switching between them.</p>
+
+
+<p>It's a feature I've wanted to see for a bit, but I had to do some R&amp;D on part of it, and never really had a chance (the effor to benefit ratio wasn't there, since I'm not doing a ton of template work these days, and there's so many interesting things to work on :) ).</p>
+
+
+<p>However, I just started work on a cool new project which has me working on a new tmbundle, and I leveled up on bundle development, so I knew what how to do the switching properly now. The bundle still works with the old method, so any users of the bundle shouldn't notice a difference.&nbsp;</p>
+
+
+<p>Anyhow, hope it helps people.</p>
+
+
+<p>m.</p>
+
+
+<p>&nbsp;</p>
+
+
+<p>&nbsp;</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Untitled]]></title>
+    <link href="http://meeech.amihod.com/27234053/"/>
+    <updated>2010-09-03T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/27234053</id>
+    <content type="html"><![CDATA[<p>New <a href="http://www.plankdesign.com/blog/2010/09/everything-add-to-cart/">post</a> up on the <a href="http://www.plankdesign.com/blog/">Plank Blog</a>&nbsp;re: adding ajax Add To Cart to everything in Shopify.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

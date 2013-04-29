@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: aea10k | bits and bobs]]></title>
+  <link href="http://meeech.amihod.com/blog/categories/aea10k/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-04-29T13:04:31-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
+  <author>
+    <name><![CDATA[Mitchell Amihod]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[small lessons learned prepping entry for 10k contest]]></title>
+    <link href="http://meeech.amihod.com/small-lessons-learned-prepping-entry-for-10k/"/>
+    <updated>2010-08-09T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/small-lessons-learned-prepping-entry-for-10k</id>
+    <content type="html"><![CDATA[<p>Some things I&rsquo;ve learned prepping my <a href="http://www.postalcode-lookup.com/">entry</a> for the <a href="http://10k.aneventapart.com">10k.aneventapart</a> contest.</p>
+
+
+
+
+<p>I opted for <a href="http://dean.edwards.name/packer/">dean edwards packer</a>. It seems to give the best results. I don&rsquo;t know that I would use it on a production site &ndash; I tend to lean more towards YUI Compressor or Closure Compiler these days &ndash; but for this contest, it was appropriate.</p>
+
+
+
+
+<p>One thing I noticed is the following pattern doesn&rsquo;t compress well: (when selecting Shrink variables option)</p>
+
+
+
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="keyword">var</span> foo = <span class="predefined-constant">false</span>,
+    bar = <span class="integer">1</span>,
+    zee = <span class="string"><span class="delimiter">'</span><span class="content">jimminey</span><span class="delimiter">'</span></span>,
+    yalta = <span class="integer">1</span>;</pre></div>
+</div>
+
+
+
+
+<p>The var names besides the first won&rsquo;t be shortened. If you are counting every byte, go for</p>
+
+
+
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="keyword">var</span> foo = <span class="predefined-constant">false</span>;
+<span class="keyword">var</span> bar = <span class="integer">1</span>;
+<span class="keyword">var</span> zee = <span class="string"><span class="delimiter">'</span><span class="content">jimminey</span><span class="delimiter">'</span></span>;
+<span class="keyword">var</span> yalta = <span class="integer">1</span>;</pre></div>
+</div>
+
+
+
+
+<p>If you are using the jQuery as your lib, if you make a call to $(&lsquo;foo&rsquo;) more than once, then assign it to a variable &ndash; it will get shortened when packed.</p>
+
+
+
+
+<p>In the end, I had some K to spare, so I didn&rsquo;t go as far as I could have in compressing things &ndash; using  single letter id&rsquo;s for example.</p>
+
+
+
+
+<p>When I began, I didn&rsquo;t think I would have room to use YUI CSS reset. If I was doing it again, I would definitely include it.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

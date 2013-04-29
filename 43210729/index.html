@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>building big big tweet - bits and bobs</title>
+  <meta name="author" content="Mitchell Amihod">
+
+  
+  <meta name="description" content="Some story on big big tweet. A few weeks ago I had this idea for a tool which would allow me to easily post multi-tweet tweets on twitter. Here&rsquo &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://meeech.amihod.com/43210729">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="bits and bobs" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18711236-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">bits and bobs</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:meeech.amihod.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Building Big Big Tweet</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-16T00:00:00-05:00" pubdate data-updated="true">Feb 16<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Some story on <a href="http://bigbigtweet.appspot.com">big big tweet</a>.</p>
+<p>A few weeks ago I had this idea for a tool which would allow me to easily post multi-tweet tweets on twitter. Here&rsquo;s the original sketch:</p>
+<p><img src="/images/2011-02-16-43210729/IMG_0496.jpg"></p>
+<p>I was pretty convinced the front end could be pieced together in about a day.</p>
+<p>Overall, I&rsquo;m pretty happy both with what I learned, and what I put together in 1 weekend and 3 nights of <a href="http://developer.yahoo.com/yui/3/">yui3</a>, python, <a href="http://code.google.com/appengine/">google app engine</a>, twitter api.</p>
+<p><a href="http://developer.yahoo.com/yui/3/">yui3</a>&nbsp;was, as always, a pleasure to work with. The new&nbsp;<a href="http://developer.yahoo.com/yui/3/cssgrids/">grids system</a>&nbsp;is great. Learnt about the synthetic&nbsp;<a href="http://developer.yahoo.com/yui/3/api/YUI.html#event_valueChange">valueChange event</a>, which is handy when you are watching a textarea. yui3 is full of all sorts of wins, so if you&rsquo;re doing front end app development and haven&rsquo;t checked it out, you&rsquo;re doing yourself a disservice.</p>
+<p>Pretty pleased with the&nbsp;<a href="https://gist.github.com/828919">code</a>&nbsp;to break up the text into tweet sized chunks. I think i&rsquo;ve finally broken through to where recursion feels natural to think about. You can see the&nbsp;<a href="http://bigbigtweet.appspot.com/js/main.js">full script</a>, in context. There&rsquo;s room for improvement, but it doesn&rsquo;t smell too bad. :)</p>
+<p>Bonus points to yui3 - I did 0 testing with mobile, everything worked on ios the first time i tried it. an android browser crashed :) I&rsquo;ve disabled preview-on-typing in mobile - that feature didn&rsquo;t make sense for the screen size. And that seems to have fixed the problem on android.</p>
+<div>Last month I was <a href="http://www.yearonelabs.com/google-hackathon-recap/">introduced</a> to google app engine, - I didn&rsquo;t have much to do with the backend work at the time (pretty much <a href="https://gist.github.com/829000">copy paste</a>), but I liked what i saw. So I decided to give it a shot for this project, and I have to say I love it. It&rsquo;s dead easy to get started serving up static files, comes with a good tool (<a>os x</a>) for running your app locally and deploying. No hassle server. It&rsquo;s possible I might hit the quota limits, but that would be a good problem to have.</div>
+<p>With (very) little knowledge of python, I was able to glue together a working backend - twitter oAuth (thanks <a href="https://github.com/mikeknapp/">mikeknapp</a>) + api, user session(thanks <a href="https://github.com/dound">dound</a>). Overall, I find  myself liking python, and had a fairly easy time of it. The biggest hiccup was missing that you need .items() on a dictionary when iterating. And that I lack experience with python debugging. i &lt;3 named args, and think <strong>doc</strong> is just a swell idea.</p>
+<p>One part of the idea is I want an easy to play with twitter framework, where I can just focus on the front end. In the end, I think i succeeded, and when I find the time &amp; know a bit more I will extract and clean up that portion with some clear instructions for deploying. I think it might be handy for some people.</p>
+<p>The final tool pretty much matches what I first imagined.</p>
+<p><img src="/images/2011-02-16-43210729/Screen_shot_2011-02-16_at_2.58.04_AM.png"></p>
+<p>I ended up removing &ldquo;edit individual tweets before posting&rdquo; functionality - seemed unnecessary. The auto-splitting worked better than i thought it would, so the preview seemed enough. Link shortening also works pretty well. There&rsquo;s a few other features that I&rsquo;d like to add at some point - direct messages being top of the list.</p>
+<p>As for the next step, but I&rsquo;m thinking it might be fun to find a designer on <a href="http://forrst.com">forrst.com</a> who likes the app idea, and would like to do a reskin, and run an a/b test against my design.</p>
+<p>You can go ahead and <a href="http://bigbigtweet.appspot.com">kick the tires</a> - you don&rsquo;t have to login to try out the multi-tweet preview function. Just start typing.</p>
+<p>Let me know what you think.</p>
+<p>ka-kaw!</p>
+<p>ps: you can follow <a href="http://www.twitter.com/big_big_tweet">@big_big_tweet</a> for updates, or <a href="http://www.twitter.com/meeech">me</a>, for general nonsense.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Mitchell Amihod</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-16T00:00:00-05:00" pubdate data-updated="true">Feb 16<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/code/'>code</a>, <a class='category' href='/blog/categories/google-app-engine/'>google app engine</a>, <a class='category' href='/blog/categories/python/'>python</a>, <a class='category' href='/blog/categories/twitter/'>twitter</a>, <a class='category' href='/blog/categories/yui3/'>yui3</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://meeech.amihod.com/43210729/" data-via="meeech" data-counturl="http://meeech.amihod.com/43210729/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/v1-of-my-lego-iphone-stand/" title="Previous Post: v1 of my lego iphone stand">&laquo; v1 of my lego iphone stand</a>
+      
+      
+        <a class="basic-alignment right" href="/update-to-shopify-textmate-bundle/" title="Next Post: update to shopify textmate bundle">update to shopify textmate bundle &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/troubleshooting-ssl-cert-with-rbenvruby-193/">troubleshooting SSL cert with rbenv/ruby 1.9.3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/making-toolbar-buttons-that-respond-to-longpr/">Making toolbar buttons that respond to longpress in Titanium for iOS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/metafield-tip-dont-bother-with-modify-when-up/">Metafield tip: don't bother with Modify when updating Products</a>
+      </li>
+    
+      <li class="post">
+        <a href="/shopify-meetdrink-up/">Shopify Meet/Drink Up</a>
+      </li>
+    
+      <li class="post">
+        <a href="/new-project-mailchimp-textmate-bundle/">new project: MailChimp TextMate Bundle</a>
+      </li>
+    
+  </ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mitchell Amihod -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

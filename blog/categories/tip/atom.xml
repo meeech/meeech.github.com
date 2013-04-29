@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tip | bits and bobs]]></title>
+  <link href="http://meeech.amihod.com/blog/categories/tip/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-04-29T13:04:31-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
+  <author>
+    <name><![CDATA[Mitchell Amihod]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[troubleshooting SSL cert with rbenv/ruby 1.9.3]]></title>
+    <link href="http://meeech.amihod.com/troubleshooting-ssl-cert-with-rbenvruby-193/"/>
+    <updated>2012-12-27T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/troubleshooting-ssl-cert-with-rbenvruby-193</id>
+    <content type="html"><![CDATA[<p>Using rbenv to run ruby 1.9.3-p327 on OSX 10.8, I kept hitting this error in a rails app I was working on: <code>Faraday::Error::ConnectionFailed (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):</code> This wasn&rsquo;t happening under system ruby 1.8.7. I found a lot of rvm specific info, but not much on fixing for rbenv.</p>
+
+
+<p>First (unsuccessful) solution I tried installing updated openssl (via brew) &amp; to rebuild ruby using <code>CONFIGURE_OPTS=--with-openssl-dir=`brew --prefix openssl` rbenv install 1.9.3-p327</code>. Again, no luck - same error.</p>
+
+
+<p>What finally worked was downloading the cacert.pem from <a href="http://curl.haxx.se/ca/">http://curl.haxx.se/ca/</a>. Install it where you want (i stuck it in /usr/local/etc/). Then, just add <code>export SSL_CERT_FILE=/usr/local/etc/cacert.pem</code> to your .zshrc (or .bashrc) and you will be good to go!</p>
+
+
+<p>Hope this helps save you some time. If you&rsquo;ve discovered a better way, share it in the comments!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[does not contain a target named ]]></title>
+    <link href="http://meeech.amihod.com/does-not-contain-a-target-named/"/>
+    <updated>2011-04-28T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/does-not-contain-a-target-named</id>
+    <content type="html"><![CDATA[<p>Note to self (and others):&nbsp;</p>
+
+
+<p>When making a Titanium mobile project if you get the error of style:</p>
+
+
+<p><strong>The project 'FooApp.xcodeproj' does not contain a target named 'FooApp'</strong></p>
+
+
+<p>The problem is Name needs to match the last part of the Application Id.</p>
+
+
+<p><img src="https://img.skitch.com/20110428-j3gh44u4ekj6ni3wtgc97nsshm.jpg" alt="" /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[very useful: find unused CSS rules with google chrome audit tool]]></title>
+    <link href="http://meeech.amihod.com/very-useful-find-unused-css-rules-with-google/"/>
+    <updated>2010-07-30T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/very-useful-find-unused-css-rules-with-google</id>
+    <content type="html"><![CDATA[<p>Not exactly a well kept secret, but haven't see it promoted much anywhere.</p>
+
+
+<p>In Chrome's developer tools, visit the Audit tab. Despite it's name, the taxman won't start shaking you by the ankles.</p>
+
+
+<p>Run the Web Page Performance option. You can then get a list of unused css rules for the page you are on.&nbsp;<p><img src="http://meeech.amihod.com/images/2010-07-30-very-useful-find-unused-css-rules-with-google/Screen_shot_2010-07-30_at_11.22.42_PM.png"></p></p>
+
+
+<p>&nbsp;</p>
+
+]]></content>
+  </entry>
+  
+</feed>

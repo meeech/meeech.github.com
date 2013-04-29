@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: textmate | bits and bobs]]></title>
+  <link href="http://meeech.amihod.com/blog/categories/textmate/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-04-29T13:04:31-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
+  <author>
+    <name><![CDATA[Mitchell Amihod]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[new project: MailChimp TextMate Bundle]]></title>
+    <link href="http://meeech.amihod.com/new-project-mailchimp-textmate-bundle/"/>
+    <updated>2011-05-26T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/new-project-mailchimp-textmate-bundle</id>
+    <content type="html"><![CDATA[<p>Started a project a back in Feb - a MailChimp TextMate bundle.</p>
+
+
+<p>Overall, it's gone pretty well - I levelled up in bundle making.</p>
+
+
+<p>the project also couldn't have come at a better time - i'm working a lot with MailChimp on the campaign side, so I will be using the bundle a fair bit day-to-day.&nbsp;</p>
+
+
+<p>This&nbsp;<a href="http://blog.mailchimp.com/mailchimp-textmate-bundle/">post</a>&nbsp;up on the MailChimp blog has some good getting started instructions.</p>
+
+
+<p>Anyone interested in writing a textmate bundle with php should have a look at the <a href="https://github.com/mailchimp/MailChimp.tmbundle">code</a>&nbsp;- I'm pretty happy with the structure of this one.</p>
+
+
+<p>I already begun using some of the code &amp; lessons on the shopify tmbundle. :)</p>
+
+
+<p>&nbsp;</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[update to shopify textmate bundle]]></title>
+    <link href="http://meeech.amihod.com/update-to-shopify-textmate-bundle/"/>
+    <updated>2011-02-20T00:00:00-05:00</updated>
+    <id>http://meeech.amihod.com/update-to-shopify-textmate-bundle</id>
+    <content type="html"><![CDATA[<p>Just updated the <a href="https://github.com/meeech/shopify.tmbundle#readme">Shopify Textmate bundle</a>. It now has support for a config file - so you can have multiple shops in a project. The most obvious use case is a dev shop and a live shop, and switching between them.</p>
+
+
+<p>It's a feature I've wanted to see for a bit, but I had to do some R&amp;D on part of it, and never really had a chance (the effor to benefit ratio wasn't there, since I'm not doing a ton of template work these days, and there's so many interesting things to work on :) ).</p>
+
+
+<p>However, I just started work on a cool new project which has me working on a new tmbundle, and I leveled up on bundle development, so I knew what how to do the switching properly now. The bundle still works with the old method, so any users of the bundle shouldn't notice a difference.&nbsp;</p>
+
+
+<p>Anyhow, hope it helps people.</p>
+
+
+<p>m.</p>
+
+
+<p>&nbsp;</p>
+
+
+<p>&nbsp;</p>
+
+]]></content>
+  </entry>
+  
+</feed>
