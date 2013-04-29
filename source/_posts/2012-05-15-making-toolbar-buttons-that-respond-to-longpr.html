@@ -1,0 +1,14 @@
+---
+layout: post
+title: Making toolbar buttons that respond to longpress in Titanium for iOS
+published: true
+date: 2012-05-15
+categories:
+- titanium
+posterous_url: http://meeech.amihod.com/making-toolbar-buttons-that-respond-to-longpr
+posterous_slug: making-toolbar-buttons-that-respond-to-longpr
+---
+<p>Turns out making a toolbar button that responds to longpress is not as straighforward as you'd think. Just making a button, and listening for longpress event doesn't work once the button is put in a toolbar. &nbsp;The trick turns out to be you need to put the button in a view. Here's the example code:</p>
+<p><script src="https://gist.github.com/2705664.js"></script></p>
+<p>The only drawback to using this method is you can't use 'systemButton' styles.</p>
+<p>&nbsp;</p>
