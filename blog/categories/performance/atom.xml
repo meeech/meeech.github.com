@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: performance | bits and bobs]]></title>
-  <link href="http://meeech.amihod.com/blog/categories/performance/atom.xml" rel="self"/>
-  <link href="http://meeech.amihod.com/"/>
-  <updated>2013-04-29T13:04:31-04:00</updated>
-  <id>http://meeech.amihod.com/</id>
+  <link href="http://meeech.github.io/blog/categories/performance/atom.xml" rel="self"/>
+  <link href="http://meeech.github.io/"/>
+  <updated>2013-04-29T15:41:42-04:00</updated>
+  <id>http://meeech.github.io/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sorting an array of objects in js]]></title>
-    <link href="http://meeech.amihod.com/sorting-an-array-of-objects-in-js/"/>
+    <link href="http://meeech.github.io/sorting-an-array-of-objects-in-js/"/>
     <updated>2010-08-29T00:00:00-04:00</updated>
-    <id>http://meeech.amihod.com/sorting-an-array-of-objects-in-js</id>
+    <id>http://meeech.github.io/sorting-an-array-of-objects-in-js</id>
     <content type="html"><![CDATA[<p>There&rsquo;s 2 ways I know of to sort an array of object according to a property on the object.</p>
 
 

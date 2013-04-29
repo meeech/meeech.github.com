@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: rbenv | bits and bobs]]></title>
-  <link href="http://meeech.amihod.com/blog/categories/rbenv/atom.xml" rel="self"/>
-  <link href="http://meeech.amihod.com/"/>
-  <updated>2013-04-29T13:04:31-04:00</updated>
-  <id>http://meeech.amihod.com/</id>
+  <link href="http://meeech.github.io/blog/categories/rbenv/atom.xml" rel="self"/>
+  <link href="http://meeech.github.io/"/>
+  <updated>2013-04-29T15:41:42-04:00</updated>
+  <id>http://meeech.github.io/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[troubleshooting SSL cert with rbenv/ruby 1.9.3]]></title>
-    <link href="http://meeech.amihod.com/troubleshooting-ssl-cert-with-rbenvruby-193/"/>
+    <link href="http://meeech.github.io/troubleshooting-ssl-cert-with-rbenvruby-193/"/>
     <updated>2012-12-27T00:00:00-05:00</updated>
-    <id>http://meeech.amihod.com/troubleshooting-ssl-cert-with-rbenvruby-193</id>
+    <id>http://meeech.github.io/troubleshooting-ssl-cert-with-rbenvruby-193</id>
     <content type="html"><![CDATA[<p>Using rbenv to run ruby 1.9.3-p327 on OSX 10.8, I kept hitting this error in a rails app I was working on: <code>Faraday::Error::ConnectionFailed (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):</code> This wasn&rsquo;t happening under system ruby 1.8.7. I found a lot of rvm specific info, but not much on fixing for rbenv.</p>
 
 

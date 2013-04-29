@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: cakephp | bits and bobs]]></title>
-  <link href="http://meeech.amihod.com/blog/categories/cakephp/atom.xml" rel="self"/>
-  <link href="http://meeech.amihod.com/"/>
-  <updated>2013-04-29T13:04:31-04:00</updated>
-  <id>http://meeech.amihod.com/</id>
+  <link href="http://meeech.github.io/blog/categories/cakephp/atom.xml" rel="self"/>
+  <link href="http://meeech.github.io/"/>
+  <updated>2013-04-29T15:41:42-04:00</updated>
+  <id>http://meeech.github.io/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[i got cake in my wordpress]]></title>
-    <link href="http://meeech.amihod.com/i-got-cake-in-my-wordpress/"/>
+    <link href="http://meeech.github.io/i-got-cake-in-my-wordpress/"/>
     <updated>2010-11-13T00:00:00-05:00</updated>
-    <id>http://meeech.amihod.com/i-got-cake-in-my-wordpress</id>
-    <content type="html"><![CDATA[<p><p><img src="http://meeech.amihod.com/images/2010-11-13-i-got-cake-in-my-wordpress/code.png"></p>Decided to open the <a href="https://github.com/meeech/expozine">code</a> for the <a href="http://www.expozine.ca">expozine</a> this year. Basically redid it all.&nbsp;year to year, it was a find/replace type job, of some of my earliest php - it wasn't partiularly pretty. &nbsp;</p>
+    <id>http://meeech.github.io/i-got-cake-in-my-wordpress</id>
+    <content type="html"><![CDATA[<p><p><img src="http://meeech.github.io/images/2010-11-13-i-got-cake-in-my-wordpress/code.png"></p>Decided to open the <a href="https://github.com/meeech/expozine">code</a> for the <a href="http://www.expozine.ca">expozine</a> this year. Basically redid it all.&nbsp;year to year, it was a find/replace type job, of some of my earliest php - it wasn't partiularly pretty. &nbsp;</p>
 
 
 <p>Anyhoo, it's <a href="http://wordpress.org/">Wordpress</a> driving the pages &amp; posts, and a <a href="http://cakephp.org/">CakePHP</a> (1.3) app handling exhibitors, registration and sponsors. &nbsp;</p>

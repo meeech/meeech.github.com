@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: aea10k | bits and bobs]]></title>
-  <link href="http://meeech.amihod.com/blog/categories/aea10k/atom.xml" rel="self"/>
-  <link href="http://meeech.amihod.com/"/>
-  <updated>2013-04-29T13:04:31-04:00</updated>
-  <id>http://meeech.amihod.com/</id>
+  <link href="http://meeech.github.io/blog/categories/aea10k/atom.xml" rel="self"/>
+  <link href="http://meeech.github.io/"/>
+  <updated>2013-04-29T15:41:42-04:00</updated>
+  <id>http://meeech.github.io/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[small lessons learned prepping entry for 10k contest]]></title>
-    <link href="http://meeech.amihod.com/small-lessons-learned-prepping-entry-for-10k/"/>
+    <link href="http://meeech.github.io/small-lessons-learned-prepping-entry-for-10k/"/>
     <updated>2010-08-09T00:00:00-04:00</updated>
-    <id>http://meeech.amihod.com/small-lessons-learned-prepping-entry-for-10k</id>
+    <id>http://meeech.github.io/small-lessons-learned-prepping-entry-for-10k</id>
     <content type="html"><![CDATA[<p>Some things I&rsquo;ve learned prepping my <a href="http://www.postalcode-lookup.com/">entry</a> for the <a href="http://10k.aneventapart.com">10k.aneventapart</a> contest.</p>
 
 

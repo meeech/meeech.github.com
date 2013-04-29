@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: yui3 | bits and bobs]]></title>
-  <link href="http://meeech.amihod.com/blog/categories/yui3/atom.xml" rel="self"/>
-  <link href="http://meeech.amihod.com/"/>
-  <updated>2013-04-29T13:04:31-04:00</updated>
-  <id>http://meeech.amihod.com/</id>
+  <link href="http://meeech.github.io/blog/categories/yui3/atom.xml" rel="self"/>
+  <link href="http://meeech.github.io/"/>
+  <updated>2013-04-29T15:41:42-04:00</updated>
+  <id>http://meeech.github.io/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,16 +15,16 @@
   
   <entry>
     <title type="html"><![CDATA[building big big tweet]]></title>
-    <link href="http://meeech.amihod.com/43210729/"/>
+    <link href="http://meeech.github.io/43210729/"/>
     <updated>2011-02-16T00:00:00-05:00</updated>
-    <id>http://meeech.amihod.com/43210729</id>
+    <id>http://meeech.github.io/43210729</id>
     <content type="html"><![CDATA[<p>Some story on <a href="http://bigbigtweet.appspot.com">big big tweet</a>.</p>
 
 
 <p>A few weeks ago I had this idea for a tool which would allow me to easily post multi-tweet tweets on twitter. Here&rsquo;s the original sketch:</p>
 
 
-<p><img src="http://meeech.amihod.com/images/2011-02-16-43210729/IMG_0496.jpg"></p>
+<p><img src="http://meeech.github.io/images/2011-02-16-43210729/IMG_0496.jpg"></p>
 
 
 <p>I was pretty convinced the front end could be pieced together in about a day.</p>
@@ -54,7 +54,7 @@
 <p>The final tool pretty much matches what I first imagined.</p>
 
 
-<p><img src="http://meeech.amihod.com/images/2011-02-16-43210729/Screen_shot_2011-02-16_at_2.58.04_AM.png"></p>
+<p><img src="http://meeech.github.io/images/2011-02-16-43210729/Screen_shot_2011-02-16_at_2.58.04_AM.png"></p>
 
 
 <p>I ended up removing &ldquo;edit individual tweets before posting&rdquo; functionality - seemed unnecessary. The auto-splitting worked better than i thought it would, so the preview seemed enough. Link shortening also works pretty well. There&rsquo;s a few other features that I&rsquo;d like to add at some point - direct messages being top of the list.</p>

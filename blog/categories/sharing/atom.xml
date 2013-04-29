@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: sharing | bits and bobs]]></title>
-  <link href="http://meeech.amihod.com/blog/categories/sharing/atom.xml" rel="self"/>
-  <link href="http://meeech.amihod.com/"/>
-  <updated>2013-04-29T13:04:31-04:00</updated>
-  <id>http://meeech.amihod.com/</id>
+  <link href="http://meeech.github.io/blog/categories/sharing/atom.xml" rel="self"/>
+  <link href="http://meeech.github.io/"/>
+  <updated>2013-04-29T15:41:42-04:00</updated>
+  <id>http://meeech.github.io/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Untitled]]></title>
-    <link href="http://meeech.amihod.com/34535034/"/>
+    <link href="http://meeech.github.io/34535034/"/>
     <updated>2010-11-25T00:00:00-05:00</updated>
-    <id>http://meeech.amihod.com/34535034</id>
+    <id>http://meeech.github.io/34535034</id>
     <content type="html"><![CDATA[<p><a href="http://wikimediafoundation.org/wiki/Support_Wikipedia/en"><img src="http://upload.wikimedia.org/wikipedia/commons/4/41/Fundraising_2009-horizontal-thanks-en.png" border="0" alt="Support Wikipedia" /></a></p>
 
 ]]></content>

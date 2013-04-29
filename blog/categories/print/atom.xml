@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: print | bits and bobs]]></title>
-  <link href="http://meeech.amihod.com/blog/categories/print/atom.xml" rel="self"/>
-  <link href="http://meeech.amihod.com/"/>
-  <updated>2013-04-29T13:04:31-04:00</updated>
-  <id>http://meeech.amihod.com/</id>
+  <link href="http://meeech.github.io/blog/categories/print/atom.xml" rel="self"/>
+  <link href="http://meeech.github.io/"/>
+  <updated>2013-04-29T15:41:42-04:00</updated>
+  <id>http://meeech.github.io/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[how to tile when printing on osx]]></title>
-    <link href="http://meeech.amihod.com/how-to-tile-when-printing-on-osx/"/>
+    <link href="http://meeech.github.io/how-to-tile-when-printing-on-osx/"/>
     <updated>2011-04-08T00:00:00-04:00</updated>
-    <id>http://meeech.amihod.com/how-to-tile-when-printing-on-osx</id>
+    <id>http://meeech.github.io/how-to-tile-when-printing-on-osx</id>
     <content type="html"><![CDATA[<p>I needed to print a pdf in tiles for my dad - some blueprints. Since the above subject of this post, when searched, didn't offer anything useful, i'm feeding the beast with the winning entry - Tiler. <a href="http://www.mindcad.com/tiler.html">http://www.mindcad.com/tiler.html</a></p>
 
 

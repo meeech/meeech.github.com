@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: GT | bits and bobs]]></title>
-  <link href="http://meeech.amihod.com/blog/categories/gt/atom.xml" rel="self"/>
-  <link href="http://meeech.amihod.com/"/>
-  <updated>2013-04-29T13:04:31-04:00</updated>
-  <id>http://meeech.amihod.com/</id>
+  <link href="http://meeech.github.io/blog/categories/gt/atom.xml" rel="self"/>
+  <link href="http://meeech.github.io/"/>
+  <updated>2013-04-29T15:41:42-04:00</updated>
+  <id>http://meeech.github.io/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Shopify Meet/Drink Up]]></title>
-    <link href="http://meeech.amihod.com/shopify-meetdrink-up/"/>
+    <link href="http://meeech.github.io/shopify-meetdrink-up/"/>
     <updated>2011-08-23T00:00:00-04:00</updated>
-    <id>http://meeech.amihod.com/shopify-meetdrink-up</id>
+    <id>http://meeech.github.io/shopify-meetdrink-up</id>
     <content type="html"><![CDATA[<p>Do you work with the Shopify e-com platform? You  in Montreal? Then join us (<a href="http://www.twitter.com/meeech">myself</a> and <a href="http://twitter.com/hunkybill">Dave Lazar</a>) for a meet &amp; drink! We&rsquo;ll be talking shop, trading tips, and other general silliness. All are welcome.</p>
 
 

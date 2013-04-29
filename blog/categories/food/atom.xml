@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: food | bits and bobs]]></title>
-  <link href="http://meeech.amihod.com/blog/categories/food/atom.xml" rel="self"/>
-  <link href="http://meeech.amihod.com/"/>
-  <updated>2013-04-29T13:04:31-04:00</updated>
-  <id>http://meeech.amihod.com/</id>
+  <link href="http://meeech.github.io/blog/categories/food/atom.xml" rel="self"/>
+  <link href="http://meeech.github.io/"/>
+  <updated>2013-04-29T15:41:42-04:00</updated>
+  <id>http://meeech.github.io/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,14 +15,14 @@
   
   <entry>
     <title type="html"><![CDATA[chocolate luuuv]]></title>
-    <link href="http://meeech.amihod.com/chocolate-luuuv/"/>
+    <link href="http://meeech.github.io/chocolate-luuuv/"/>
     <updated>2010-11-15T00:00:00-05:00</updated>
-    <id>http://meeech.amihod.com/chocolate-luuuv</id>
+    <id>http://meeech.github.io/chocolate-luuuv</id>
     <content type="html"><![CDATA[<p>An experiment with a microwave and some extra cake batter. Tasted way better than it looks. That light coloured strata at the bottom is a yogurt layer.&nbsp;</p>
 
 
-<p><img src="http://meeech.amihod.com/images/2010-11-15-chocolate-luuuv/IMG_4131.JPG">
-<img src="http://meeech.amihod.com/images/2010-11-15-chocolate-luuuv/IMG_4136.JPG"></p>
+<p><img src="http://meeech.github.io/images/2010-11-15-chocolate-luuuv/IMG_4131.JPG">
+<img src="http://meeech.github.io/images/2010-11-15-chocolate-luuuv/IMG_4136.JPG"></p>
 ]]></content>
   </entry>
   

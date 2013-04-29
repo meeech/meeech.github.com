@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: diy | bits and bobs]]></title>
-  <link href="http://meeech.amihod.com/blog/categories/diy/atom.xml" rel="self"/>
-  <link href="http://meeech.amihod.com/"/>
-  <updated>2013-04-29T13:04:31-04:00</updated>
-  <id>http://meeech.amihod.com/</id>
+  <link href="http://meeech.github.io/blog/categories/diy/atom.xml" rel="self"/>
+  <link href="http://meeech.github.io/"/>
+  <updated>2013-04-29T15:41:42-04:00</updated>
+  <id>http://meeech.github.io/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[v1 of my lego iphone stand]]></title>
-    <link href="http://meeech.amihod.com/v1-of-my-lego-iphone-stand/"/>
+    <link href="http://meeech.github.io/v1-of-my-lego-iphone-stand/"/>
     <updated>2011-02-07T00:00:00-05:00</updated>
-    <id>http://meeech.amihod.com/v1-of-my-lego-iphone-stand</id>
-    <content type="html"><![CDATA[<p><img src="http://meeech.amihod.com/images/2011-02-07-v1-of-my-lego-iphone-stand/IMG_4350.JPG"></p>
+    <id>http://meeech.github.io/v1-of-my-lego-iphone-stand</id>
+    <content type="html"><![CDATA[<p><img src="http://meeech.github.io/images/2011-02-07-v1-of-my-lego-iphone-stand/IMG_4350.JPG"></p>
 
 ]]></content>
   </entry>
