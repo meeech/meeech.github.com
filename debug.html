@@ -1,0 +1,14 @@
+<script>
+//This is the value we we're getting from a remote source
+var value = "hang\n";
+
+setInterval(function(){
+    switch(value) {
+      case 'hang':
+        console.log("Correct!");
+        break;
+      default:
+        console.log("Something went wrong");
+    }
+},1000);
+</script>
