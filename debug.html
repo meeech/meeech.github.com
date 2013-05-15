@@ -5,10 +5,13 @@ var value = "hang\n";
 setInterval(function(){
     switch(value) {
       case 'hang':
-        console.log("Correct!");
+        document.body.innerHTML = "Hang in there!";
+        break;
+      case 'up':
+        document.body.innerHTML = "Up";
         break;
       default:
-        console.log("Something went wrong");
+        document.body.innerHTML = "No good!";
     }
 },1000);
 </script>
