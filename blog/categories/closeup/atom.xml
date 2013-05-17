@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: closeup | bits and bobs]]></title>
-  <link href="http://meeech.github.io/blog/categories/closeup/atom.xml" rel="self"/>
-  <link href="http://meeech.github.io/"/>
-  <updated>2013-05-15T11:45:48-04:00</updated>
-  <id>http://meeech.github.io/</id>
+  <link href="http://meeech.amihod.com/blog/categories/closeup/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-05-17T09:03:11-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[findley]]></title>
-    <link href="http://meeech.github.io/findley/"/>
+    <link href="http://meeech.amihod.com/findley/"/>
     <updated>2010-10-30T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/findley</id>
-    <content type="html"><![CDATA[<p><p><img src="http://meeech.github.io/images/2010-10-30-findley/IMG_4049.JPG"></p>trying out posterous &gt; flickr</p>
+    <id>http://meeech.amihod.com/findley</id>
+    <content type="html"><![CDATA[<p><p><img src="http://meeech.amihod.com/images/2010-10-30-findley/IMG_4049.JPG"></p>trying out posterous &gt; flickr</p>
 
 ]]></content>
   </entry>

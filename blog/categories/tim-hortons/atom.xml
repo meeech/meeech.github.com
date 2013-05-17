@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tim hortons | bits and bobs]]></title>
-  <link href="http://meeech.github.io/blog/categories/tim-hortons/atom.xml" rel="self"/>
-  <link href="http://meeech.github.io/"/>
-  <updated>2013-05-15T11:45:48-04:00</updated>
-  <id>http://meeech.github.io/</id>
+  <link href="http://meeech.amihod.com/blog/categories/tim-hortons/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-05-17T09:03:11-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[rousette]]></title>
-    <link href="http://meeech.github.io/rousette/"/>
+    <link href="http://meeech.amihod.com/rousette/"/>
     <updated>2010-10-30T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/rousette</id>
-    <content type="html"><![CDATA[<p><p><img src="http://meeech.github.io/images/2010-10-30-rousette/IMG_4045.JPG"></p>paying off a lost bet. 12 rousettes. though one got lost in transit.</p>
+    <id>http://meeech.amihod.com/rousette</id>
+    <content type="html"><![CDATA[<p><p><img src="http://meeech.amihod.com/images/2010-10-30-rousette/IMG_4045.JPG"></p>paying off a lost bet. 12 rousettes. though one got lost in transit.</p>
 
 ]]></content>
   </entry>

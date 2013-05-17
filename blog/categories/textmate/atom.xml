@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: textmate | bits and bobs]]></title>
-  <link href="http://meeech.github.io/blog/categories/textmate/atom.xml" rel="self"/>
-  <link href="http://meeech.github.io/"/>
-  <updated>2013-05-15T11:45:48-04:00</updated>
-  <id>http://meeech.github.io/</id>
+  <link href="http://meeech.amihod.com/blog/categories/textmate/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-05-17T09:03:11-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[new project: MailChimp TextMate Bundle]]></title>
-    <link href="http://meeech.github.io/new-project-mailchimp-textmate-bundle/"/>
+    <link href="http://meeech.amihod.com/new-project-mailchimp-textmate-bundle/"/>
     <updated>2011-05-26T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/new-project-mailchimp-textmate-bundle</id>
+    <id>http://meeech.amihod.com/new-project-mailchimp-textmate-bundle</id>
     <content type="html"><![CDATA[<p>Started a project a back in Feb - a MailChimp TextMate bundle.</p>
 
 
@@ -43,9 +43,9 @@
   
   <entry>
     <title type="html"><![CDATA[update to shopify textmate bundle]]></title>
-    <link href="http://meeech.github.io/update-to-shopify-textmate-bundle/"/>
+    <link href="http://meeech.amihod.com/update-to-shopify-textmate-bundle/"/>
     <updated>2011-02-20T00:00:00-05:00</updated>
-    <id>http://meeech.github.io/update-to-shopify-textmate-bundle</id>
+    <id>http://meeech.amihod.com/update-to-shopify-textmate-bundle</id>
     <content type="html"><![CDATA[<p>Just updated the <a href="https://github.com/meeech/shopify.tmbundle#readme">Shopify Textmate bundle</a>. It now has support for a config file - so you can have multiple shops in a project. The most obvious use case is a dev shop and a live shop, and switching between them.</p>
 
 

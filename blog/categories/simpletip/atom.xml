@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: simpletip | bits and bobs]]></title>
-  <link href="http://meeech.github.io/blog/categories/simpletip/atom.xml" rel="self"/>
-  <link href="http://meeech.github.io/"/>
-  <updated>2013-05-15T11:45:48-04:00</updated>
-  <id>http://meeech.github.io/</id>
+  <link href="http://meeech.amihod.com/blog/categories/simpletip/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-05-17T09:03:11-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Metafield tip: don't bother with Modify when updating Products]]></title>
-    <link href="http://meeech.github.io/metafield-tip-dont-bother-with-modify-when-up/"/>
+    <link href="http://meeech.amihod.com/metafield-tip-dont-bother-with-modify-when-up/"/>
     <updated>2011-10-14T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/metafield-tip-dont-bother-with-modify-when-up</id>
+    <id>http://meeech.amihod.com/metafield-tip-dont-bother-with-modify-when-up</id>
     <content type="html"><![CDATA[<p>Been spending some time looking into <a href="http://api.shopify.com/metafield.html">metafields</a>.</p>
 
 
@@ -34,9 +34,9 @@
   
   <entry>
     <title type="html"><![CDATA[use && to chain shell commands together]]></title>
-    <link href="http://meeech.github.io/use-to-chain-shell-commands-together/"/>
+    <link href="http://meeech.amihod.com/use-to-chain-shell-commands-together/"/>
     <updated>2010-09-29T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/use-to-chain-shell-commands-together</id>
+    <id>http://meeech.amihod.com/use-to-chain-shell-commands-together</id>
     <content type="html"><![CDATA[<p>I bounce between 2 versions of <a href="http://cakephp.org">cakephp</a> - some projects are still on 1.2.&nbsp;</p>
 
 

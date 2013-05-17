@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[bits and bobs]]></title>
-  <link href="http://meeech.github.io/atom.xml" rel="self"/>
-  <link href="http://meeech.github.io/"/>
-  <updated>2013-05-15T11:45:48-04:00</updated>
-  <id>http://meeech.github.io/</id>
+  <link href="http://meeech.amihod.com/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-05-17T09:03:11-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[migrated]]></title>
-    <link href="http://meeech.github.io/migration/"/>
+    <link href="http://meeech.amihod.com/migration/"/>
     <updated>2013-04-29T15:33:00-04:00</updated>
-    <id>http://meeech.github.io/migration</id>
+    <id>http://meeech.amihod.com/migration</id>
     <content type="html"><![CDATA[<p>Bye bye posterous, hello octopress! Just a simple test post.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[troubleshooting SSL cert with rbenv/ruby 1.9.3]]></title>
-    <link href="http://meeech.github.io/troubleshooting-ssl-cert-with-rbenvruby-193/"/>
+    <link href="http://meeech.amihod.com/troubleshooting-ssl-cert-with-rbenvruby-193/"/>
     <updated>2012-12-27T00:00:00-05:00</updated>
-    <id>http://meeech.github.io/troubleshooting-ssl-cert-with-rbenvruby-193</id>
+    <id>http://meeech.amihod.com/troubleshooting-ssl-cert-with-rbenvruby-193</id>
     <content type="html"><![CDATA[<p>Using rbenv to run ruby 1.9.3-p327 on OSX 10.8, I kept hitting this error in a rails app I was working on: <code>Faraday::Error::ConnectionFailed (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):</code> This wasn&rsquo;t happening under system ruby 1.8.7. I found a lot of rvm specific info, but not much on fixing for rbenv.</p>
 <p>First (unsuccessful) solution I tried installing updated openssl (via brew) &amp; to rebuild ruby using <code>CONFIGURE_OPTS=--with-openssl-dir=`brew --prefix openssl` rbenv install 1.9.3-p327</code>. Again, no luck - same error.</p>
 <p>What finally worked was downloading the cacert.pem from <a href="http://curl.haxx.se/ca/">http://curl.haxx.se/ca/</a>. Install it where you want (i stuck it in /usr/local/etc/). Then, just add <code>export SSL_CERT_FILE=/usr/local/etc/cacert.pem</code> to your .zshrc (or .bashrc) and you will be good to go!</p>
@@ -36,9 +36,9 @@
   
   <entry>
     <title type="html"><![CDATA[Making toolbar buttons that respond to longpress in Titanium for iOS]]></title>
-    <link href="http://meeech.github.io/making-toolbar-buttons-that-respond-to-longpr/"/>
+    <link href="http://meeech.amihod.com/making-toolbar-buttons-that-respond-to-longpr/"/>
     <updated>2012-05-15T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/making-toolbar-buttons-that-respond-to-longpr</id>
+    <id>http://meeech.amihod.com/making-toolbar-buttons-that-respond-to-longpr</id>
     <content type="html"><![CDATA[<p>Turns out making a toolbar button that responds to longpress is not as straighforward as you&#8217;d think. Just making a button, and listening for longpress event doesn&#8217;t work once the button is put in a toolbar. &nbsp;The trick turns out to be you need to put the button in a view. Here&#8217;s the example code:</p>
 <p><script src="https://gist.github.com/2705664.js"></script></p>
 <p>The only drawback to using this method is you can&#8217;t use &#8216;systemButton&#8217; styles.</p>
@@ -48,9 +48,9 @@
   
   <entry>
     <title type="html"><![CDATA[Metafield tip: don't bother with Modify when updating Products]]></title>
-    <link href="http://meeech.github.io/metafield-tip-dont-bother-with-modify-when-up/"/>
+    <link href="http://meeech.amihod.com/metafield-tip-dont-bother-with-modify-when-up/"/>
     <updated>2011-10-14T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/metafield-tip-dont-bother-with-modify-when-up</id>
+    <id>http://meeech.amihod.com/metafield-tip-dont-bother-with-modify-when-up</id>
     <content type="html"><![CDATA[<p>Been spending some time looking into <a href="http://api.shopify.com/metafield.html">metafields</a>.</p>
 <p>Here&rsquo;s something worth knowing to make your life easier.</p>
 <p>When updating metafields on a product, turns out <a href="http://api.shopify.com/metafield.html#create">Create</a> acts like Modify or Create if it doesn&rsquo;t exist. As long as the namespace and key match an existing metafield on the product, the value will be updated, otherwise it will be created.</p>
@@ -60,9 +60,9 @@
   
   <entry>
     <title type="html"><![CDATA[Shopify Meet/Drink Up]]></title>
-    <link href="http://meeech.github.io/shopify-meetdrink-up/"/>
+    <link href="http://meeech.amihod.com/shopify-meetdrink-up/"/>
     <updated>2011-08-23T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/shopify-meetdrink-up</id>
+    <id>http://meeech.amihod.com/shopify-meetdrink-up</id>
     <content type="html"><![CDATA[<p>Do you work with the Shopify e-com platform? You  in Montreal? Then join us (<a href="http://www.twitter.com/meeech">myself</a> and <a href="http://twitter.com/hunkybill">Dave Lazar</a>) for a meet &amp; drink! We&rsquo;ll be talking shop, trading tips, and other general silliness. All are welcome.</p>
 <p>Where: The Irish Embassy - <a href="http://maps.google.com/maps?q=1234+Rue+Bishop,+montreal&amp;gl=us&amp;z=16&amp;vpsrc=0">1234 Rue Bishop</a></p>
 <p>When: 6PM, Thursday September 1, 2011</p>
@@ -73,9 +73,9 @@
   
   <entry>
     <title type="html"><![CDATA[new project: MailChimp TextMate Bundle]]></title>
-    <link href="http://meeech.github.io/new-project-mailchimp-textmate-bundle/"/>
+    <link href="http://meeech.amihod.com/new-project-mailchimp-textmate-bundle/"/>
     <updated>2011-05-26T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/new-project-mailchimp-textmate-bundle</id>
+    <id>http://meeech.amihod.com/new-project-mailchimp-textmate-bundle</id>
     <content type="html"><![CDATA[<p>Started a project a back in Feb - a MailChimp TextMate bundle.</p>
 <p>Overall, it&#8217;s gone pretty well - I levelled up in bundle making.</p>
 <p>the project also couldn&#8217;t have come at a better time - i&#8217;m working a lot with MailChimp on the campaign side, so I will be using the bundle a fair bit day-to-day.&nbsp;</p>
@@ -88,9 +88,9 @@
   
   <entry>
     <title type="html"><![CDATA[update]]></title>
-    <link href="http://meeech.github.io/update/"/>
+    <link href="http://meeech.amihod.com/update/"/>
     <updated>2011-05-19T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/update</id>
+    <id>http://meeech.amihod.com/update</id>
     <content type="html"><![CDATA[<p>Just a little update. Been a bit silent over here, since pretty deep in <a href="http://www.happystuffapp.com" title="Happy Stuff">Happy Stuff</a> these days.</p>
 <p>Happy Stuff is based around the idea that many of us have things we&#8217;re done with, but they still work, so we don&#8217;t want to throw them out. Someone else could use that stuff, you just don&#8217;t know who.&nbsp;Happy Stuff is the easiest way to connect you to people in your area that want that stuff.</p>
 <p>Come on over and check it <a href="http://www.happystuffapp.com">out</a>. We&#8217;re in closed testing right now, but sign up and we&#8217;ll let you know when we letting people in your area in. You can also follow <a href="http://twitter.com/happystuff">@happystuff</a> for updates.</p>
@@ -99,9 +99,9 @@
   
   <entry>
     <title type="html"><![CDATA[does not contain a target named ]]></title>
-    <link href="http://meeech.github.io/does-not-contain-a-target-named/"/>
+    <link href="http://meeech.amihod.com/does-not-contain-a-target-named/"/>
     <updated>2011-04-28T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/does-not-contain-a-target-named</id>
+    <id>http://meeech.amihod.com/does-not-contain-a-target-named</id>
     <content type="html"><![CDATA[<p>Note to self (and others):&nbsp;</p>
 <p>When making a Titanium mobile project if you get the error of style:</p>
 <p><strong>The project &#8216;FooApp.xcodeproj&#8217; does not contain a target named &#8216;FooApp&#8217;</strong></p>
@@ -112,9 +112,9 @@
   
   <entry>
     <title type="html"><![CDATA[how to tile when printing on osx]]></title>
-    <link href="http://meeech.github.io/how-to-tile-when-printing-on-osx/"/>
+    <link href="http://meeech.amihod.com/how-to-tile-when-printing-on-osx/"/>
     <updated>2011-04-08T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/how-to-tile-when-printing-on-osx</id>
+    <id>http://meeech.amihod.com/how-to-tile-when-printing-on-osx</id>
     <content type="html"><![CDATA[<p>I needed to print a pdf in tiles for my dad - some blueprints. Since the above subject of this post, when searched, didn&#8217;t offer anything useful, i&#8217;m feeding the beast with the winning entry - Tiler. <a href="http://www.mindcad.com/tiler.html">http://www.mindcad.com/tiler.html</a></p>
 <p>Thanks to @fonginator for the link.</p>
 ]]></content>
@@ -122,9 +122,9 @@
   
   <entry>
     <title type="html"><![CDATA[my leaving godaddy strategy]]></title>
-    <link href="http://meeech.github.io/my-leaving-godaddy-strategy/"/>
+    <link href="http://meeech.amihod.com/my-leaving-godaddy-strategy/"/>
     <updated>2011-04-04T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/my-leaving-godaddy-strategy</id>
+    <id>http://meeech.amihod.com/my-leaving-godaddy-strategy</id>
     <content type="html"><![CDATA[<p>I&#8217;ve decided on how I will leave godaddy, and spread out the pain.</p>
 <p>While initially, I thought I would just transfer everything in one shot, that&#8217;s actually pretty inconvenient.</p>
 <p>So in the end, I&#8217;m just turning off auto-renew, and will transfer each one as they come due. I&#8217;ll be using <a href="https://www.domainsatcost.ca">Domainsatcost.ca</a>, who have been working out well for me.</p>
@@ -134,18 +134,18 @@
   
   <entry>
     <title type="html"><![CDATA[pickydomains.com followup]]></title>
-    <link href="http://meeech.github.io/pickydomainscom-followup/"/>
+    <link href="http://meeech.amihod.com/pickydomainscom-followup/"/>
     <updated>2011-04-02T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/pickydomainscom-followup</id>
+    <id>http://meeech.amihod.com/pickydomainscom-followup</id>
     <content type="html"><![CDATA[<p>So, in the end, pickydomains.com did come up with a few ok names, but we finally decided to go in another direction. I&#8217;ll probably give it another shot in the future if I find myself in the same bind.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[encyclopedia brown and the case of the opus card that stopped working like normal]]></title>
-    <link href="http://meeech.github.io/encyclopedia-brown-and-the-case-of-the-opus-c/"/>
+    <link href="http://meeech.amihod.com/encyclopedia-brown-and-the-case-of-the-opus-c/"/>
     <updated>2011-03-10T00:00:00-05:00</updated>
-    <id>http://meeech.github.io/encyclopedia-brown-and-the-case-of-the-opus-c</id>
+    <id>http://meeech.amihod.com/encyclopedia-brown-and-the-case-of-the-opus-c</id>
     <content type="html"><![CDATA[<p>A few days ago, my opus card stopped working while in my wallet. I started having to take my card out, and for the life of me, couldnt figure out why.</p>
 <p>This has been going on a few days now, and was driving me crazy. At first I thought it was the opus card. Even though i only take it out once a month, it was somehow degrading.&nbsp;</p>
 <p>I realized today the problem was a new credit card. It must have some sort a chip in it that the turnstiles are picking up, so they get confused.</p>
@@ -156,9 +156,9 @@
   
   <entry>
     <title type="html"><![CDATA[Untitled]]></title>
-    <link href="http://meeech.github.io/44723415/"/>
+    <link href="http://meeech.amihod.com/44723415/"/>
     <updated>2011-03-02T00:00:00-05:00</updated>
-    <id>http://meeech.github.io/44723415</id>
+    <id>http://meeech.amihod.com/44723415</id>
     <content type="html"><![CDATA[<p>As most of you know by now, i&#8217;ve started a <a href="http://www.yearonelabs.com/year-one-labs-invests-in-dov-and-mitch-amihod/">new venture with my brother</a>.</p>
 <p>There is nothing new or unique in one problem we are having: naming. Finding a name is hard. Finding a good domain name is hard^2. Just ask the folks over at <a href="http://shwowp.com/">shwowp</a>&nbsp;:)&nbsp;</p>
 <p>When doing some research into the hyphen-in-domain-name-issue, I came across <a href="http://www.pickydomains.com/">pickydomains.com</a>&nbsp;and have decided to&nbsp;give it a shot, and I&#8217;ll report back whether it was successful or not.</p>
@@ -168,9 +168,9 @@
   
   <entry>
     <title type="html"><![CDATA[update to shopify textmate bundle]]></title>
-    <link href="http://meeech.github.io/update-to-shopify-textmate-bundle/"/>
+    <link href="http://meeech.amihod.com/update-to-shopify-textmate-bundle/"/>
     <updated>2011-02-20T00:00:00-05:00</updated>
-    <id>http://meeech.github.io/update-to-shopify-textmate-bundle</id>
+    <id>http://meeech.amihod.com/update-to-shopify-textmate-bundle</id>
     <content type="html"><![CDATA[<p>Just updated the <a href="https://github.com/meeech/shopify.tmbundle#readme">Shopify Textmate bundle</a>. It now has support for a config file - so you can have multiple shops in a project. The most obvious use case is a dev shop and a live shop, and switching between them.</p>
 <p>It&#8217;s a feature I&#8217;ve wanted to see for a bit, but I had to do some R&amp;D on part of it, and never really had a chance (the effor to benefit ratio wasn&#8217;t there, since I&#8217;m not doing a ton of template work these days, and there&#8217;s so many interesting things to work on :) ).</p>
 <p>However, I just started work on a cool new project which has me working on a new tmbundle, and I leveled up on bundle development, so I knew what how to do the switching properly now. The bundle still works with the old method, so any users of the bundle shouldn&#8217;t notice a difference.&nbsp;</p>
@@ -183,12 +183,12 @@
   
   <entry>
     <title type="html"><![CDATA[building big big tweet]]></title>
-    <link href="http://meeech.github.io/43210729/"/>
+    <link href="http://meeech.amihod.com/43210729/"/>
     <updated>2011-02-16T00:00:00-05:00</updated>
-    <id>http://meeech.github.io/43210729</id>
+    <id>http://meeech.amihod.com/43210729</id>
     <content type="html"><![CDATA[<p>Some story on <a href="http://bigbigtweet.appspot.com">big big tweet</a>.</p>
 <p>A few weeks ago I had this idea for a tool which would allow me to easily post multi-tweet tweets on twitter. Here&rsquo;s the original sketch:</p>
-<p><img src="http://meeech.github.io/images/2011-02-16-43210729/IMG_0496.jpg"></p>
+<p><img src="http://meeech.amihod.com/images/2011-02-16-43210729/IMG_0496.jpg"></p>
 <p>I was pretty convinced the front end could be pieced together in about a day.</p>
 <p>Overall, I&rsquo;m pretty happy both with what I learned, and what I put together in 1 weekend and 3 nights of <a href="http://developer.yahoo.com/yui/3/">yui3</a>, python, <a href="http://code.google.com/appengine/">google app engine</a>, twitter api.</p>
 <p><a href="http://developer.yahoo.com/yui/3/">yui3</a>&nbsp;was, as always, a pleasure to work with. The new&nbsp;<a href="http://developer.yahoo.com/yui/3/cssgrids/">grids system</a>&nbsp;is great. Learnt about the synthetic&nbsp;<a href="http://developer.yahoo.com/yui/3/api/YUI.html#event_valueChange">valueChange event</a>, which is handy when you are watching a textarea. yui3 is full of all sorts of wins, so if you&rsquo;re doing front end app development and haven&rsquo;t checked it out, you&rsquo;re doing yourself a disservice.</p>
@@ -198,7 +198,7 @@
 <p>With (very) little knowledge of python, I was able to glue together a working backend - twitter oAuth (thanks <a href="https://github.com/mikeknapp/">mikeknapp</a>) + api, user session(thanks <a href="https://github.com/dound">dound</a>). Overall, I find  myself liking python, and had a fairly easy time of it. The biggest hiccup was missing that you need .items() on a dictionary when iterating. And that I lack experience with python debugging. i &lt;3 named args, and think <strong>doc</strong> is just a swell idea.</p>
 <p>One part of the idea is I want an easy to play with twitter framework, where I can just focus on the front end. In the end, I think i succeeded, and when I find the time &amp; know a bit more I will extract and clean up that portion with some clear instructions for deploying. I think it might be handy for some people.</p>
 <p>The final tool pretty much matches what I first imagined.</p>
-<p><img src="http://meeech.github.io/images/2011-02-16-43210729/Screen_shot_2011-02-16_at_2.58.04_AM.png"></p>
+<p><img src="http://meeech.amihod.com/images/2011-02-16-43210729/Screen_shot_2011-02-16_at_2.58.04_AM.png"></p>
 <p>I ended up removing &ldquo;edit individual tweets before posting&rdquo; functionality - seemed unnecessary. The auto-splitting worked better than i thought it would, so the preview seemed enough. Link shortening also works pretty well. There&rsquo;s a few other features that I&rsquo;d like to add at some point - direct messages being top of the list.</p>
 <p>As for the next step, but I&rsquo;m thinking it might be fun to find a designer on <a href="http://forrst.com">forrst.com</a> who likes the app idea, and would like to do a reskin, and run an a/b test against my design.</p>
 <p>You can go ahead and <a href="http://bigbigtweet.appspot.com">kick the tires</a> - you don&rsquo;t have to login to try out the multi-tweet preview function. Just start typing.</p>
@@ -210,18 +210,18 @@
   
   <entry>
     <title type="html"><![CDATA[v1 of my lego iphone stand]]></title>
-    <link href="http://meeech.github.io/v1-of-my-lego-iphone-stand/"/>
+    <link href="http://meeech.amihod.com/v1-of-my-lego-iphone-stand/"/>
     <updated>2011-02-07T00:00:00-05:00</updated>
-    <id>http://meeech.github.io/v1-of-my-lego-iphone-stand</id>
-    <content type="html"><![CDATA[<p><img src="http://meeech.github.io/images/2011-02-07-v1-of-my-lego-iphone-stand/IMG_4350.JPG"></p>
+    <id>http://meeech.amihod.com/v1-of-my-lego-iphone-stand</id>
+    <content type="html"><![CDATA[<p><img src="http://meeech.amihod.com/images/2011-02-07-v1-of-my-lego-iphone-stand/IMG_4350.JPG"></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[beginning ruby]]></title>
-    <link href="http://meeech.github.io/beginning-ruby/"/>
+    <link href="http://meeech.amihod.com/beginning-ruby/"/>
     <updated>2010-11-25T00:00:00-05:00</updated>
-    <id>http://meeech.github.io/beginning-ruby</id>
+    <id>http://meeech.amihod.com/beginning-ruby</id>
     <content type="html"><![CDATA[<p>I decided a few weeks ago to pick up a new language. The choice was being between python and ruby. My day to day is php &amp; js, so this is all coming from that angle.</p>
 <p><strong>Python</strong></p>
 <p>I&rsquo;d like to play around with tools like <a href="https://github.com/hmason/tc">tc</a> and <a href="http://www.stashboard.org/">stashboard</a>. I&rsquo;ve heard with python, there&rsquo;s often only one way to do things - this has some appeal. But python seems to be transitioning right now from 2 to 3. Also, I don&rsquo;t have fond memories of the last time I dipped my toe in the python pool - the shallow end mind you. Though I suspect homebrew will make it easier next time around. And I&rsquo;ll be honest - the whole whitespace thing is a bit of a turnoff.</p>
@@ -264,30 +264,30 @@
   
   <entry>
     <title type="html"><![CDATA[Untitled]]></title>
-    <link href="http://meeech.github.io/34535034/"/>
+    <link href="http://meeech.amihod.com/34535034/"/>
     <updated>2010-11-25T00:00:00-05:00</updated>
-    <id>http://meeech.github.io/34535034</id>
+    <id>http://meeech.amihod.com/34535034</id>
     <content type="html"><![CDATA[<p><a href="http://wikimediafoundation.org/wiki/Support_Wikipedia/en"><img src="http://upload.wikimedia.org/wikipedia/commons/4/41/Fundraising_2009-horizontal-thanks-en.png" border="0" alt="Support Wikipedia" /></a></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[chocolate luuuv]]></title>
-    <link href="http://meeech.github.io/chocolate-luuuv/"/>
+    <link href="http://meeech.amihod.com/chocolate-luuuv/"/>
     <updated>2010-11-15T00:00:00-05:00</updated>
-    <id>http://meeech.github.io/chocolate-luuuv</id>
+    <id>http://meeech.amihod.com/chocolate-luuuv</id>
     <content type="html"><![CDATA[<p>An experiment with a microwave and some extra cake batter. Tasted way better than it looks. That light coloured strata at the bottom is a yogurt layer.&nbsp;</p>
 
-<img src="http://meeech.github.io/images/2010-11-15-chocolate-luuuv/IMG_4131.JPG">
-<img src="http://meeech.github.io/images/2010-11-15-chocolate-luuuv/IMG_4136.JPG">
+<img src="http://meeech.amihod.com/images/2010-11-15-chocolate-luuuv/IMG_4131.JPG">
+<img src="http://meeech.amihod.com/images/2010-11-15-chocolate-luuuv/IMG_4136.JPG">
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Untitled]]></title>
-    <link href="http://meeech.github.io/33585980/"/>
+    <link href="http://meeech.amihod.com/33585980/"/>
     <updated>2010-11-15T00:00:00-05:00</updated>
-    <id>http://meeech.github.io/33585980</id>
+    <id>http://meeech.amihod.com/33585980</id>
     <content type="html"><![CDATA[<p>So instead of writing a novel for november, i&rsquo;ve committed to finishing some projects &amp; posts that have been sitting around. Or killing them. Usually, there&rsquo;s just one or two little details holding much of it back. Like with <a href="https://github.com/plank/pdfize">PDFize</a> - It&rsquo;s been done for a while, but I knew I had a few hours of tweaking the readme, making sure everything worked as advertised, and trying it out in 1.3. It&rsquo;s still not as &lsquo;complete&rsquo; as I would like, but at least it&rsquo;s out there and can maybe help someone now. Ideally, when I find time, i&rsquo;d like to finish up a helper to complement it.</p>
 ]]></content>
   </entry>

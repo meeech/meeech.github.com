@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://meeech.github.io/sitemap.xml 
+Sitemap: http://meeech.amihod.com/sitemap.xml 

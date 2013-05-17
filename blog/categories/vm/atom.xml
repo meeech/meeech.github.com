@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: vm | bits and bobs]]></title>
-  <link href="http://meeech.github.io/blog/categories/vm/atom.xml" rel="self"/>
-  <link href="http://meeech.github.io/"/>
-  <updated>2013-05-15T11:45:48-04:00</updated>
-  <id>http://meeech.github.io/</id>
+  <link href="http://meeech.amihod.com/blog/categories/vm/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-05-17T09:03:11-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[windows vm keeps rebooting]]></title>
-    <link href="http://meeech.github.io/windows-vm-keeps-rebooting/"/>
+    <link href="http://meeech.amihod.com/windows-vm-keeps-rebooting/"/>
     <updated>2010-08-11T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/windows-vm-keeps-rebooting</id>
+    <id>http://meeech.amihod.com/windows-vm-keeps-rebooting</id>
     <content type="html"><![CDATA[<p>The other day, I was setting up a win7 machine to grudgingly get ie9 up and running (for <a href="http://10k.aneventapart.com">10k submission</a>). In any case, set up a new VM with <a href="http://www.virtualbox.org/">Virtual Box</a>, use a  win7.vdi, and tried booting it up. Kept getting the blue screen of death (i know! funny - it&rsquo;s still in use) which would flash away before I could even read what the error was. Windows repair didn&rsquo;t do much. The same .vdi was working fine for a colleague.</p>
 
 
@@ -27,7 +27,7 @@
 <h2>Before fixing it</h2>
 
 
-<p><img src="http://meeech.github.io/images/2010-08-11-windows-vm-keeps-rebooting/before-fix-vm.png"></p>
+<p><img src="http://meeech.amihod.com/images/2010-08-11-windows-vm-keeps-rebooting/before-fix-vm.png"></p>
 
 
 <p>&nbsp;</p>
@@ -39,7 +39,7 @@
 <h2>After fixing it</h2>
 
 
-<p><img src="http://meeech.github.io/images/2010-08-11-windows-vm-keeps-rebooting/after-fix-vm.png"></p>
+<p><img src="http://meeech.amihod.com/images/2010-08-11-windows-vm-keeps-rebooting/after-fix-vm.png"></p>
 
 
 <p>If this doesn't help your problem, well, <a href="http://www.google.com/">best of luck</a>.</p>

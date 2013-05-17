@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: css | bits and bobs]]></title>
-  <link href="http://meeech.github.io/blog/categories/css/atom.xml" rel="self"/>
-  <link href="http://meeech.github.io/"/>
-  <updated>2013-05-15T11:45:48-04:00</updated>
-  <id>http://meeech.github.io/</id>
+  <link href="http://meeech.amihod.com/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-05-17T09:03:11-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,16 +15,16 @@
   
   <entry>
     <title type="html"><![CDATA[very useful: find unused CSS rules with google chrome audit tool]]></title>
-    <link href="http://meeech.github.io/very-useful-find-unused-css-rules-with-google/"/>
+    <link href="http://meeech.amihod.com/very-useful-find-unused-css-rules-with-google/"/>
     <updated>2010-07-30T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/very-useful-find-unused-css-rules-with-google</id>
+    <id>http://meeech.amihod.com/very-useful-find-unused-css-rules-with-google</id>
     <content type="html"><![CDATA[<p>Not exactly a well kept secret, but haven't see it promoted much anywhere.</p>
 
 
 <p>In Chrome's developer tools, visit the Audit tab. Despite it's name, the taxman won't start shaking you by the ankles.</p>
 
 
-<p>Run the Web Page Performance option. You can then get a list of unused css rules for the page you are on.&nbsp;<p><img src="http://meeech.github.io/images/2010-07-30-very-useful-find-unused-css-rules-with-google/Screen_shot_2010-07-30_at_11.22.42_PM.png"></p></p>
+<p>Run the Web Page Performance option. You can then get a list of unused css rules for the page you are on.&nbsp;<p><img src="http://meeech.amihod.com/images/2010-07-30-very-useful-find-unused-css-rules-with-google/Screen_shot_2010-07-30_at_11.22.42_PM.png"></p></p>
 
 
 <p>&nbsp;</p>

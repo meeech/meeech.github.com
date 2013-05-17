@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: godaddy | bits and bobs]]></title>
-  <link href="http://meeech.github.io/blog/categories/godaddy/atom.xml" rel="self"/>
-  <link href="http://meeech.github.io/"/>
-  <updated>2013-05-15T11:45:48-04:00</updated>
-  <id>http://meeech.github.io/</id>
+  <link href="http://meeech.amihod.com/blog/categories/godaddy/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-05-17T09:03:11-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[my leaving godaddy strategy]]></title>
-    <link href="http://meeech.github.io/my-leaving-godaddy-strategy/"/>
+    <link href="http://meeech.amihod.com/my-leaving-godaddy-strategy/"/>
     <updated>2011-04-04T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/my-leaving-godaddy-strategy</id>
+    <id>http://meeech.amihod.com/my-leaving-godaddy-strategy</id>
     <content type="html"><![CDATA[<p>I've decided on how I will leave godaddy, and spread out the pain.</p>
 
 

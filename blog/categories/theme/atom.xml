@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: theme | bits and bobs]]></title>
-  <link href="http://meeech.github.io/blog/categories/theme/atom.xml" rel="self"/>
-  <link href="http://meeech.github.io/"/>
-  <updated>2013-05-15T11:45:48-04:00</updated>
-  <id>http://meeech.github.io/</id>
+  <link href="http://meeech.amihod.com/blog/categories/theme/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-05-17T09:03:11-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Untitled]]></title>
-    <link href="http://meeech.github.io/27234053/"/>
+    <link href="http://meeech.amihod.com/27234053/"/>
     <updated>2010-09-03T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/27234053</id>
+    <id>http://meeech.amihod.com/27234053</id>
     <content type="html"><![CDATA[<p>New <a href="http://www.plankdesign.com/blog/2010/09/everything-add-to-cart/">post</a> up on the <a href="http://www.plankdesign.com/blog/">Plank Blog</a>&nbsp;re: adding ajax Add To Cart to everything in Shopify.</p>
 
 ]]></content>

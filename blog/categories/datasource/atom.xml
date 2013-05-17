@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: datasource | bits and bobs]]></title>
-  <link href="http://meeech.github.io/blog/categories/datasource/atom.xml" rel="self"/>
-  <link href="http://meeech.github.io/"/>
-  <updated>2013-05-15T11:45:48-04:00</updated>
-  <id>http://meeech.github.io/</id>
+  <link href="http://meeech.amihod.com/blog/categories/datasource/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-05-17T09:03:11-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Untitled]]></title>
-    <link href="http://meeech.github.io/24436085/"/>
+    <link href="http://meeech.amihod.com/24436085/"/>
     <updated>2010-07-28T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/24436085</id>
+    <id>http://meeech.amihod.com/24436085</id>
     <content type="html"><![CDATA[<p><span style="color: #888888;"><a href="http://developer.yahoo.com/yui/3/api/Pollable.html">datasource.polling</a></span> calls are async, so they will stack if server is lagging.</p>
 
 

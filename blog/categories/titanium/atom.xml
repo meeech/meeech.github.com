@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: titanium | bits and bobs]]></title>
-  <link href="http://meeech.github.io/blog/categories/titanium/atom.xml" rel="self"/>
-  <link href="http://meeech.github.io/"/>
-  <updated>2013-05-15T11:45:48-04:00</updated>
-  <id>http://meeech.github.io/</id>
+  <link href="http://meeech.amihod.com/blog/categories/titanium/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-05-17T09:03:11-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Making toolbar buttons that respond to longpress in Titanium for iOS]]></title>
-    <link href="http://meeech.github.io/making-toolbar-buttons-that-respond-to-longpr/"/>
+    <link href="http://meeech.amihod.com/making-toolbar-buttons-that-respond-to-longpr/"/>
     <updated>2012-05-15T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/making-toolbar-buttons-that-respond-to-longpr</id>
+    <id>http://meeech.amihod.com/making-toolbar-buttons-that-respond-to-longpr</id>
     <content type="html"><![CDATA[<p>Turns out making a toolbar button that responds to longpress is not as straighforward as you'd think. Just making a button, and listening for longpress event doesn't work once the button is put in a toolbar. &nbsp;The trick turns out to be you need to put the button in a view. Here's the example code:</p>
 
 
@@ -34,9 +34,9 @@
   
   <entry>
     <title type="html"><![CDATA[does not contain a target named ]]></title>
-    <link href="http://meeech.github.io/does-not-contain-a-target-named/"/>
+    <link href="http://meeech.amihod.com/does-not-contain-a-target-named/"/>
     <updated>2011-04-28T00:00:00-04:00</updated>
-    <id>http://meeech.github.io/does-not-contain-a-target-named</id>
+    <id>http://meeech.amihod.com/does-not-contain-a-target-named</id>
     <content type="html"><![CDATA[<p>Note to self (and others):&nbsp;</p>
 
 

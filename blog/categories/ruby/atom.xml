@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ruby | bits and bobs]]></title>
-  <link href="http://meeech.github.io/blog/categories/ruby/atom.xml" rel="self"/>
-  <link href="http://meeech.github.io/"/>
-  <updated>2013-05-15T11:45:48-04:00</updated>
-  <id>http://meeech.github.io/</id>
+  <link href="http://meeech.amihod.com/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://meeech.amihod.com/"/>
+  <updated>2013-05-17T09:03:11-04:00</updated>
+  <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[beginning ruby]]></title>
-    <link href="http://meeech.github.io/beginning-ruby/"/>
+    <link href="http://meeech.amihod.com/beginning-ruby/"/>
     <updated>2010-11-25T00:00:00-05:00</updated>
-    <id>http://meeech.github.io/beginning-ruby</id>
+    <id>http://meeech.amihod.com/beginning-ruby</id>
     <content type="html"><![CDATA[<p>I decided a few weeks ago to pick up a new language. The choice was being between python and ruby. My day to day is php &amp; js, so this is all coming from that angle.</p>
 
 
