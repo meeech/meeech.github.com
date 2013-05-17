@@ -4,7 +4,7 @@
   <title><![CDATA[Category: chrome | bits and bobs]]></title>
   <link href="http://meeech.amihod.com/blog/categories/chrome/atom.xml" rel="self"/>
   <link href="http://meeech.amihod.com/"/>
-  <updated>2013-05-17T09:03:11-04:00</updated>
+  <updated>2013-05-17T09:22:17-04:00</updated>
   <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
@@ -12,6 +12,76 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Getting started with javascript debugging in Chrome]]></title>
+    <link href="http://meeech.amihod.com/getting-started-with-javascript-debugging-in-chrome/"/>
+    <updated>2013-05-15T00:00:00-04:00</updated>
+    <id>http://meeech.amihod.com/getting-started-with-javascript-debugging-in-chrome</id>
+    <content type="html"><![CDATA[<p>When getting started with js, one of the first debugging techniques you learn is <code>console.log</code> to see what's going on. For a variety of reasons, this behaviour sticks. It's time to level up my friends! There is a better way - the Chrome Javascript debugger.</p>
+
+<p>Here is a gentle introduction to the js debugger, and an example of some neat things you can do with it.</p>
+
+<p>Based on a true story, but I've simplified things in this case :)</p>
+
+<p>Below is the script we will be debugging. The problem in this case is clear (the extra <code>\n</code> in <code>value</code>). We'll go through the steps you would use to find this problem with the debugger. You can load this script and follow along: <a href="http://meeech.amihod.com/debug.html">http://meeech.amihod.com/debug.html</a>.</p>
+
+<p>``` js
+//Pretend this value returned from a remote source
+var value = "hang\n";</p>
+
+<p>setInterval(function(){</p>
+
+<pre><code>switch(value) {
+  case 'hang':
+    document.body.innerHTML = "Hang in there!";
+    break;
+  case 'up':
+    document.body.innerHTML = "Up";
+    break;
+  default:
+    document.body.innerHTML = "No good!";
+}
+</code></pre>
+
+<p>},1000);
+```</p>
+
+<p><img class="right" src="/images/chrome_debugger/remote-source.png" width="353" height="142" title="Remote Source" > Pretend <code>value</code> is actually coming from a remote source. You inspect the response and don't notice the carriage return.</p>
+
+<p>We're expecting that our script will show "Hang in there!", but instead, we keep seeing "No good!".</p>
+
+<ul>
+<li>Open your Developer Tools (<em>View > Developer > Developer Tools</em>)</li>
+<li>Click on the Source tab. Here is where you can find all the scripts running on a page. [The sidebar might not be showing- make it show by clicking on the arrow]. Select the debug.html page. <img class="center" src="/images/chrome_debugger/showing-the-source.png" width="365" height="214" title="Show Source" ></li>
+<li>You should now see something like this: <img class="center" src="/images/chrome_debugger/debug-panel.png" width="1021" height="330"></li>
+<li>First thing we want to do is see what the <code>switch</code> statement thinks its <code>value</code> is. Let's go ahead, and add a breakpoint. To add a breakpoint, click on the line number - in this case, line 6. The blue mark is showing a breakpoint. Even if you reload the page, the breakpoint will remain. <img class="center" src="/images/chrome_debugger/setting-the-breakpoint.png" width="176" height="111"></li>
+<li>The script will now pause when it hits the breakpoint - you now see a red mark. <img class="center" src="/images/chrome_debugger/breaked.png" width="290" height="97"></li>
+<li>Right-click on <code>value</code>, and select "Add to Watch" <img class="center" src="/images/chrome_debugger/add-to-watch.png" width="432" height="187"></li>
+<li>Over on the right in Watch Expressions, you now see <code>value</code>. And you can clearly see the carriage return symbol that's part of <code>value</code>. <img class="center" src="/images/chrome_debugger/watch-panel.png" width="270" height="287"></li>
+</ul>
+
+
+<p>And we've found our problem. But that's not all! While we're here, let's just make sure our <code>switch</code> statement works, given the right input. We can change what's inside <code>value</code> without reloading the script.</p>
+
+<ul>
+<li>Right-click on <code>value</code> and select "Evaluate in Console". <img class="center" src="/images/chrome_debugger/evaluate-in-console.png" width="372" height="175"> A console should open <img class="center" src="/images/chrome_debugger/console.png" width="441" height="167"></li>
+<li>Inside the console type <code>value='hang'</code>. Then, start the script running again by click on the Play button over on the right. <img class="center" src="/images/chrome_debugger/play-button.png" width="169" height="122"> You should now see "Hang in there!" on the page, and the script will pause again at the breakpoint. This time, put <code>value='up'</code> and click the Play button again.
+<img class="center" src="/images/chrome_debugger/modify-value.png" width="302" height="147"></li>
+</ul>
+
+
+<p>This only scratches the surface of what you can do in the debugger - click around the panels on the right. Hopefully this will help you get started using it.</p>
+
+<!--
+---
+Firefox users: You can watch, but one bug in FF: it doesn't show the '\n' in `value` when 'Watch'ing it. I've reported that. 
+
+Safari users: You can set breakpoints, I couldn't fine 'Watch' ability, but you can set breakpoints, and play with `value` via the console that shows up.
+-->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[very useful: find unused CSS rules with google chrome audit tool]]></title>

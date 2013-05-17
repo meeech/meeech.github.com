@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>bits and bobs</title>
+  <title>Getting started with javascript debugging in Chrome - bits and bobs</title>
   <meta name="author" content="Mitchell Amihod">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://meeech.amihod.com/">
+  <link rel="canonical" href="http://meeech.amihod.com/getting-started-with-javascript-debugging-in-chrome/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
    <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -73,15 +73,12 @@
 </nav> -->
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/getting-started-with-javascript-debugging-in-chrome/">Getting Started With Javascript Debugging in Chrome</a></h1>
+      <h1 class="entry-title">Getting Started With Javascript Debugging in Chrome</h1>
     
     
       <p class="meta">
@@ -104,7 +101,7 @@
   </header>
 
 
-  <div class="entry-content"><p>When getting started with js, one of the first debugging techniques you learn is <code>console.log</code> to see what&#8217;s going on. For a variety of reasons, this behaviour sticks. It&#8217;s time to level up my friends! There is a better way - the Chrome Javascript debugger.</p>
+<div class="entry-content"><p>When getting started with js, one of the first debugging techniques you learn is <code>console.log</code> to see what&#8217;s going on. For a variety of reasons, this behaviour sticks. It&#8217;s time to level up my friends! There is a better way - the Chrome Javascript debugger.</p>
 
 <p>Here is a gentle introduction to the js debugger, and an example of some neat things you can do with it.</p>
 
@@ -179,58 +176,16 @@ Safari users: You can set breakpoints, I couldn't fine 'Watch' ability, but you 
 -->
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/migration/">Migrated</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Mitchell Amihod</span></span>
 
-<time datetime="2013-04-29T15:33:00-04:00" pubdate data-updated="true">Apr 29<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Bye bye posterous, hello octopress! Just a simple test post.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/troubleshooting-ssl-cert-with-rbenvruby-193/">Troubleshooting SSL Cert With Rbenv/ruby 1.9.3</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -242,307 +197,38 @@ Safari users: You can set breakpoints, I couldn't fine 'Watch' ability, but you 
   
 
 
-<time datetime="2012-12-27T00:00:00-05:00" pubdate data-updated="true">Dec 27<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Using rbenv to run ruby 1.9.3-p327 on OSX 10.8, I kept hitting this error in a rails app I was working on: <code>Faraday::Error::ConnectionFailed (SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed):</code> This wasn&rsquo;t happening under system ruby 1.8.7. I found a lot of rvm specific info, but not much on fixing for rbenv.</p>
-<p>First (unsuccessful) solution I tried installing updated openssl (via brew) &amp; to rebuild ruby using <code>CONFIGURE_OPTS=--with-openssl-dir=`brew --prefix openssl` rbenv install 1.9.3-p327</code>. Again, no luck - same error.</p>
-<p>What finally worked was downloading the cacert.pem from <a href="http://curl.haxx.se/ca/">http://curl.haxx.se/ca/</a>. Install it where you want (i stuck it in /usr/local/etc/). Then, just add <code>export SSL_CERT_FILE=/usr/local/etc/cacert.pem</code> to your .zshrc (or .bashrc) and you will be good to go!</p>
-<p>Hope this helps save you some time. If you&rsquo;ve discovered a better way, share it in the comments!</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2013-05-15T00:00:00-04:00" pubdate data-updated="true">May 15<span>th</span>, 2013</time>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/making-toolbar-buttons-that-respond-to-longpr/">Making Toolbar Buttons That Respond to Longpress in Titanium for iOS</a></h1>
-    
-    
-      <p class="meta">
-        
 
-
-
-
-
-
-
-
+<span class="categories">
   
+    <a class='category' href='/blog/categories/chrome/'>chrome</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/tip/'>tip</a>
+  
+</span>
 
 
-<time datetime="2012-05-15T00:00:00-04:00" pubdate data-updated="true">May 15<span>th</span>, 2012</time>
-        
-      </p>
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>Turns out making a toolbar button that responds to longpress is not as straighforward as you&#8217;d think. Just making a button, and listening for longpress event doesn&#8217;t work once the button is put in a toolbar. &nbsp;The trick turns out to be you need to put the button in a view. Here&#8217;s the example code:</p>
-<p><script src="https://gist.github.com/2705664.js"></script></p>
-<p>The only drawback to using this method is you can&#8217;t use &#8216;systemButton&#8217; styles.</p>
-<p>&nbsp;</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://meeech.amihod.com/getting-started-with-javascript-debugging-in-chrome/" data-via="meeech" data-counturl="http://meeech.amihod.com/getting-started-with-javascript-debugging-in-chrome/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
+    
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/metafield-tip-dont-bother-with-modify-when-up/">Metafield Tip: Don&#8217;t Bother With Modify When Updating Products</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-14T00:00:00-04:00" pubdate data-updated="true">Oct 14<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Been spending some time looking into <a href="http://api.shopify.com/metafield.html">metafields</a>.</p>
-<p>Here&rsquo;s something worth knowing to make your life easier.</p>
-<p>When updating metafields on a product, turns out <a href="http://api.shopify.com/metafield.html#create">Create</a> acts like Modify or Create if it doesn&rsquo;t exist. As long as the namespace and key match an existing metafield on the product, the value will be updated, otherwise it will be created.</p>
-<p>If you know of a good case when to use the Modify call, I&rsquo;d love to hear it.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+        <a class="basic-alignment left" href="/migration/" title="Previous Post: migrated">&laquo; migrated</a>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/shopify-meetdrink-up/">Shopify Meet/Drink Up</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-08-23T00:00:00-04:00" pubdate data-updated="true">Aug 23<span>rd</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Do you work with the Shopify e-com platform? You  in Montreal? Then join us (<a href="http://www.twitter.com/meeech">myself</a> and <a href="http://twitter.com/hunkybill">Dave Lazar</a>) for a meet &amp; drink! We&rsquo;ll be talking shop, trading tips, and other general silliness. All are welcome.</p>
-<p>Where: The Irish Embassy - <a href="http://maps.google.com/maps?q=1234+Rue+Bishop,+montreal&amp;gl=us&amp;z=16&amp;vpsrc=0">1234 Rue Bishop</a></p>
-<p>When: 6PM, Thursday September 1, 2011</p>
-<p>RSVP&rsquo;ing is not necessary, but a quick note <a href="http://www.twitter.com/meeech">@meeech</a> on twitter or via <a href="mailto:mitchell.amihod@gmail.com">email</a> to let me know you&rsquo;re planning to come will be helpful (to gauge how much space we need)</p>
-<p>(Should note this is in no way an official Shopify event. Just some local users having a meetup.)</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/new-project-mailchimp-textmate-bundle/">New Project: MailChimp TextMate Bundle</a></h1>
-    
-    
-      <p class="meta">
-        
+    </p>
+  </footer>
+</article>
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-26T00:00:00-04:00" pubdate data-updated="true">May 26<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Started a project a back in Feb - a MailChimp TextMate bundle.</p>
-<p>Overall, it&#8217;s gone pretty well - I levelled up in bundle making.</p>
-<p>the project also couldn&#8217;t have come at a better time - i&#8217;m working a lot with MailChimp on the campaign side, so I will be using the bundle a fair bit day-to-day.&nbsp;</p>
-<p>This&nbsp;<a href="http://blog.mailchimp.com/mailchimp-textmate-bundle/">post</a>&nbsp;up on the MailChimp blog has some good getting started instructions.</p>
-<p>Anyone interested in writing a textmate bundle with php should have a look at the <a href="https://github.com/mailchimp/MailChimp.tmbundle">code</a>&nbsp;- I&#8217;m pretty happy with the structure of this one.</p>
-<p>I already begun using some of the code &amp; lessons on the shopify tmbundle. :)</p>
-<p>&nbsp;</p>
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/update/">Update</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-19T00:00:00-04:00" pubdate data-updated="true">May 19<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Just a little update. Been a bit silent over here, since pretty deep in <a href="http://www.happystuffapp.com" title="Happy Stuff">Happy Stuff</a> these days.</p>
-<p>Happy Stuff is based around the idea that many of us have things we&#8217;re done with, but they still work, so we don&#8217;t want to throw them out. Someone else could use that stuff, you just don&#8217;t know who.&nbsp;Happy Stuff is the easiest way to connect you to people in your area that want that stuff.</p>
-<p>Come on over and check it <a href="http://www.happystuffapp.com">out</a>. We&#8217;re in closed testing right now, but sign up and we&#8217;ll let you know when we letting people in your area in. You can also follow <a href="http://twitter.com/happystuff">@happystuff</a> for updates.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/does-not-contain-a-target-named/">Does Not Contain a Target Named</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-04-28T00:00:00-04:00" pubdate data-updated="true">Apr 28<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Note to self (and others):&nbsp;</p>
-<p>When making a Titanium mobile project if you get the error of style:</p>
-<p><strong>The project &#8216;FooApp.xcodeproj&#8217; does not contain a target named &#8216;FooApp&#8217;</strong></p>
-<p>The problem is Name needs to match the last part of the Application Id.</p>
-<p><img src="https://img.skitch.com/20110428-j3gh44u4ekj6ni3wtgc97nsshm.jpg" alt="" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/how-to-tile-when-printing-on-osx/">How to Tile When Printing on Osx</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-04-08T00:00:00-04:00" pubdate data-updated="true">Apr 8<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I needed to print a pdf in tiles for my dad - some blueprints. Since the above subject of this post, when searched, didn&#8217;t offer anything useful, i&#8217;m feeding the beast with the winning entry - Tiler. <a href="http://www.mindcad.com/tiler.html">http://www.mindcad.com/tiler.html</a></p>
-<p>Thanks to @fonginator for the link.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
-    
-    <a href="archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -576,7 +262,7 @@ Safari users: You can set breakpoints, I couldn't fine 'Watch' ability, but you 
       </li>
     
       <li class="post">
-        <a href="/metafield-tip-dont-bother-with-modify-when-up/">Metafield tip: don&#8217;t bother with Modify when updating Products</a>
+        <a href="/metafield-tip-dont-bother-with-modify-when-up/">Metafield tip: don't bother with Modify when updating Products</a>
       </li>
     
   </ul>
@@ -584,6 +270,7 @@ Safari users: You can set breakpoints, I couldn't fine 'Watch' ability, but you 
 
   
 </aside>
+
 
     </div>
   </div>
