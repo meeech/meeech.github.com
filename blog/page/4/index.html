@@ -9,7 +9,8 @@
   <meta name="author" content="Mitchell Amihod">
 
   
-  <meta name="description" content="I tend not to watch much &#8216;tv&#8217; these days - it&#8217;s all about the dl&#8217;s. But when I do, one thing always bothers me: HDTV killed &hellip;">
+  <meta name="description" content="If you are using zsh, with autocomplete and git, then you can autocomplete things like branch names.
+I aliased my git to git-achievements, and the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +76,48 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/29259613/">Untitled</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-29T00:00:00-04:00" pubdate data-updated="true">Sep 29<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>
+<p>If you are using zsh, with autocomplete and git, then you can autocomplete things like branch names.</p>
+<p>I aliased my git to <a href="http://github.com/icefox/git-achievements">git-achievements</a>, and the autocomplete of branches stopped working.</p>
+<p>Turns out the solution was just to add this</p>
+<p><a href="http://zshwiki.org/home/options/comp">setopt complete_aliases</a></p>
+<div>to my rc file. Now autocomplete is working again. Will see if there&#8217;s any other side effects.&nbsp;</div>
+</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -469,6 +512,10 @@ random_objects.sort();</pre></div>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/using-event-emitter-with-titanium/">Using Emitter for Events with Titanium</a>
+      </li>
+    
+      <li class="post">
         <a href="/getting-started-with-javascript-debugging-in-chrome/">Getting started with Javascript Debugger in Chrome</a>
       </li>
     
@@ -482,10 +529,6 @@ random_objects.sort();</pre></div>
     
       <li class="post">
         <a href="/making-toolbar-buttons-that-respond-to-longpr/">Making toolbar buttons that respond to longpress in Titanium for iOS</a>
-      </li>
-    
-      <li class="post">
-        <a href="/metafield-tip-dont-bother-with-modify-when-up/">Metafield tip: don&#8217;t bother with Modify when updating Products</a>
       </li>
     
   </ul>
@@ -504,9 +547,30 @@ random_objects.sort();</pre></div>
 </footer>
   
 
+<script type="text/javascript">
+      var disqus_shortname = 'meeech';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
 
 
 

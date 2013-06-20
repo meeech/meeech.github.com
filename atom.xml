@@ -4,7 +4,7 @@
   <title><![CDATA[bits and bobs]]></title>
   <link href="http://meeech.amihod.com/atom.xml" rel="self"/>
   <link href="http://meeech.amihod.com/"/>
-  <updated>2013-05-25T13:35:25-04:00</updated>
+  <updated>2013-06-20T12:10:11-04:00</updated>
   <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Using Emitter for Events with Titanium]]></title>
+    <link href="http://meeech.amihod.com/using-event-emitter-with-titanium/"/>
+    <updated>2013-06-20T08:32:00-04:00</updated>
+    <id>http://meeech.amihod.com/using-event-emitter-with-titanium</id>
+    <content type="html"><![CDATA[<p>While building <a href="http://www.nirvanahq.com">Nirvana</a>&#8217;s iPad app I revisited some of the decisions made working on the iPhone version. This time around, decided to go with a more event-driven design.</p>
+
+<p>Titanium has a global event system, so on the surface that would seem like a good choice. Just use Ti.App.fireEvent/addEventListener and you&#8217;re good to go.</p>
+
+<p>There are a couple of things I wasn&#8217;t happy with using Ti events:</p>
+
+<ul>
+<li>There seems to be some overhead associated with using Ti event system. Any data you pass has to cross the Kroll-bridge.</li>
+<li>You can only pass &#8221;<a href="http://docs.appcelerator.com/titanium/latest/#!/guide/Event_Handling">JSON-serializable data when firing events</a>&#8221;. So this means no passing around Ti objects when firing events manually.</li>
+<li>You always need to pass in a callback object for removeEventListener. You can&#8217;t just remove all events for a type.</li>
+</ul>
+
+
+<p>I decided to give <a href="https://github.com/component/emitter">Emitter</a> a try, from the <a href="https://github.com/component">Component</a> library. It&#8217;s fairly straight-forward to use.</p>
+
+<p>I whipped up a little example <a href="https://gist.github.com/meeech/568669ea435afe246a11">test script</a> to compare use of Emitter vs Ti events. Speed wise, Emitter runs the 10000 events faster than the Ti events.</p>
+
+<p>With any choice there are advantages and disadvantages.</p>
+
+<ul>
+<li>In the <a href="https://gist.github.com/meeech/568669ea435afe246a11">example code</a>, if you up limit, ie: 100000, there&#8217;s a good chance, you&#8217;ll blow the stack - so that&#8217;s something to be aware of. You can wrap the event.emit in a setTimeout(f, 0). In that case, the performance is on par with Ti&#8217;s event system.</li>
+<li>One advantage of using Emitter is you can actually pass around Ti objects and functions. Since we&#8217;re not going over the bridge, you can pass pretty much anything, as opposed to only <a href="http://docs.appcelerator.com/titanium/latest/#!/guide/Event_Handling">serializable data</a>. This makes it more straight-forward to decouple the pieces of your app.<br/>
+<strong>eg</strong>: I use a popover, which is shown from a main controller. You can then dive further into the details, and make edits. Rather than keep track of the popover on a global and use it directly when needing to add/remove a view from different areas, the popover just listens for &#8216;popover:add&#8217; &amp; &#8216;popover:remove&#8217; events to add/remove views. And the TiView itself is passed around as part of the event data. No global juggling involved to get a reference to those views.</li>
+<li>The callbacks are executed immediately. That can be a benefit or a drawback, depending on how you use it. I&#8217;ve found it helpful to be assured of some events happening in sequence, especially when dealing with timing &amp; redraws in Titanium.</li>
+</ul>
+
+
+<p>Something wrong? Something right? Let me know in the comments.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Getting started with Javascript Debugger in Chrome]]></title>
@@ -350,18 +386,6 @@ Safari users: You can set breakpoints, I couldn't fine 'Watch' ability, but you 
     <updated>2010-11-25T00:00:00-05:00</updated>
     <id>http://meeech.amihod.com/34535034</id>
     <content type="html"><![CDATA[<p><a href="http://wikimediafoundation.org/wiki/Support_Wikipedia/en"><img src="http://upload.wikimedia.org/wikipedia/commons/4/41/Fundraising_2009-horizontal-thanks-en.png" border="0" alt="Support Wikipedia" /></a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[chocolate luuuv]]></title>
-    <link href="http://meeech.amihod.com/chocolate-luuuv/"/>
-    <updated>2010-11-15T00:00:00-05:00</updated>
-    <id>http://meeech.amihod.com/chocolate-luuuv</id>
-    <content type="html"><![CDATA[<p>An experiment with a microwave and some extra cake batter. Tasted way better than it looks. That light coloured strata at the bottom is a yogurt layer.&nbsp;</p>
-
-<img src="http://meeech.amihod.com/images/2010-11-15-chocolate-luuuv/IMG_4131.JPG">
-<img src="http://meeech.amihod.com/images/2010-11-15-chocolate-luuuv/IMG_4136.JPG">
 ]]></content>
   </entry>
   

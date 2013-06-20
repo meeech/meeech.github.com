@@ -4,7 +4,7 @@
   <title><![CDATA[Category: titanium | bits and bobs]]></title>
   <link href="http://meeech.amihod.com/blog/categories/titanium/atom.xml" rel="self"/>
   <link href="http://meeech.amihod.com/"/>
-  <updated>2013-05-25T13:35:25-04:00</updated>
+  <updated>2013-06-20T12:10:11-04:00</updated>
   <id>http://meeech.amihod.com/</id>
   <author>
     <name><![CDATA[Mitchell Amihod]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Using Emitter for Events with Titanium]]></title>
+    <link href="http://meeech.amihod.com/using-event-emitter-with-titanium/"/>
+    <updated>2013-06-20T08:32:00-04:00</updated>
+    <id>http://meeech.amihod.com/using-event-emitter-with-titanium</id>
+    <content type="html"><![CDATA[<p>While building <a href="http://www.nirvanahq.com">Nirvana</a>'s iPad app I revisited some of the decisions made working on the iPhone version. This time around, decided to go with a more event-driven design.</p>
+
+<p>Titanium has a global event system, so on the surface that would seem like a good choice. Just use Ti.App.fireEvent/addEventListener and you're good to go.</p>
+
+<p>There are a couple of things I wasn't happy with using Ti events:</p>
+
+<ul>
+<li>There seems to be some overhead associated with using Ti event system. Any data you pass has to cross the Kroll-bridge.</li>
+<li>You can only pass "<a href="http://docs.appcelerator.com/titanium/latest/#!/guide/Event_Handling">JSON-serializable data when firing events</a>". So this means no passing around Ti objects when firing events manually.</li>
+<li>You always need to pass in a callback object for removeEventListener. You can't just remove all events for a type.</li>
+</ul>
+
+
+<p>I decided to give <a href="https://github.com/component/emitter">Emitter</a> a try, from the <a href="https://github.com/component">Component</a> library. It's fairly straight-forward to use.</p>
+
+<p>I whipped up a little example <a href="https://gist.github.com/meeech/568669ea435afe246a11">test script</a> to compare use of Emitter vs Ti events. Speed wise, Emitter runs the 10000 events faster than the Ti events.</p>
+
+<p>With any choice there are advantages and disadvantages.</p>
+
+<ul>
+<li>In the <a href="https://gist.github.com/meeech/568669ea435afe246a11">example code</a>, if you up limit, ie: 100000, there's a good chance, you'll blow the stack - so that's something to be aware of. You can wrap the event.emit in a setTimeout(f, 0). In that case, the performance is on par with Ti's event system.</li>
+<li>One advantage of using Emitter is you can actually pass around Ti objects and functions. Since we're not going over the bridge, you can pass pretty much anything, as opposed to only <a href="http://docs.appcelerator.com/titanium/latest/#!/guide/Event_Handling">serializable data</a>. This makes it more straight-forward to decouple the pieces of your app.<br/>
+<strong>eg</strong>: I use a popover, which is shown from a main controller. You can then dive further into the details, and make edits. Rather than keep track of the popover on a global and use it directly when needing to add/remove a view from different areas, the popover just listens for 'popover:add' &amp; 'popover:remove' events to add/remove views. And the TiView itself is passed around as part of the event data. No global juggling involved to get a reference to those views.</li>
+<li>The callbacks are executed immediately. That can be a benefit or a drawback, depending on how you use it. I've found it helpful to be assured of some events happening in sequence, especially when dealing with timing &amp; redraws in Titanium.</li>
+</ul>
+
+
+<p>Something wrong? Something right? Let me know in the comments.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Making toolbar buttons that respond to longpress in Titanium for iOS]]></title>

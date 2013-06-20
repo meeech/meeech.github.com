@@ -9,7 +9,7 @@
   <meta name="author" content="Mitchell Amihod">
 
   
-  <meta name="description" content="When getting started with js, one of the first debugging techniques you learn is console.log to see what&#8217;s going on. For a variety of reasons, &hellip;">
+  <meta name="description" content="While building Nirvana&#8217;s iPad app I revisited some of the decisions made working on the iPhone version. This time around, decided to go with a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,69 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/using-event-emitter-with-titanium/">Using Emitter for Events With Titanium</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-20T08:32:00-04:00" pubdate data-updated="true">Jun 20<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>While building <a href="http://www.nirvanahq.com">Nirvana</a>&#8217;s iPad app I revisited some of the decisions made working on the iPhone version. This time around, decided to go with a more event-driven design.</p>
+
+<p>Titanium has a global event system, so on the surface that would seem like a good choice. Just use Ti.App.fireEvent/addEventListener and you&#8217;re good to go.</p>
+
+<p>There are a couple of things I wasn&#8217;t happy with using Ti events:</p>
+
+<ul>
+<li>There seems to be some overhead associated with using Ti event system. Any data you pass has to cross the Kroll-bridge.</li>
+<li>You can only pass &#8221;<a href="http://docs.appcelerator.com/titanium/latest/#!/guide/Event_Handling">JSON-serializable data when firing events</a>&#8221;. So this means no passing around Ti objects when firing events manually.</li>
+<li>You always need to pass in a callback object for removeEventListener. You can&#8217;t just remove all events for a type.</li>
+</ul>
+
+
+<p>I decided to give <a href="https://github.com/component/emitter">Emitter</a> a try, from the <a href="https://github.com/component">Component</a> library. It&#8217;s fairly straight-forward to use.</p>
+
+<p>I whipped up a little example <a href="https://gist.github.com/meeech/568669ea435afe246a11">test script</a> to compare use of Emitter vs Ti events. Speed wise, Emitter runs the 10000 events faster than the Ti events.</p>
+
+<p>With any choice there are advantages and disadvantages.</p>
+
+<ul>
+<li>In the <a href="https://gist.github.com/meeech/568669ea435afe246a11">example code</a>, if you up limit, ie: 100000, there&#8217;s a good chance, you&#8217;ll blow the stack - so that&#8217;s something to be aware of. You can wrap the event.emit in a setTimeout(f, 0). In that case, the performance is on par with Ti&#8217;s event system.</li>
+<li>One advantage of using Emitter is you can actually pass around Ti objects and functions. Since we&#8217;re not going over the bridge, you can pass pretty much anything, as opposed to only <a href="http://docs.appcelerator.com/titanium/latest/#!/guide/Event_Handling">serializable data</a>. This makes it more straight-forward to decouple the pieces of your app.<br/>
+<strong>eg</strong>: I use a popover, which is shown from a main controller. You can then dive further into the details, and make edits. Rather than keep track of the popover on a global and use it directly when needing to add/remove a view from different areas, the popover just listens for &#8216;popover:add&#8217; &amp; &#8216;popover:remove&#8217; events to add/remove views. And the TiView itself is passed around as part of the event data. No global juggling involved to get a reference to those views.</li>
+<li>The callbacks are executed immediately. That can be a benefit or a drawback, depending on how you use it. I&#8217;ve found it helpful to be assured of some events happening in sequence, especially when dealing with timing &amp; redraws in Titanium.</li>
+</ul>
+
+
+<p>Something wrong? Something right? Let me know in the comments.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -498,43 +561,6 @@ Safari users: You can set breakpoints, I couldn't fine 'Watch' ability, but you 
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/how-to-tile-when-printing-on-osx/">How to Tile When Printing on Osx</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-04-08T00:00:00-04:00" pubdate data-updated="true">Apr 8<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I needed to print a pdf in tiles for my dad - some blueprints. Since the above subject of this post, when searched, didn&#8217;t offer anything useful, i&#8217;m feeding the beast with the winning entry - Tiler. <a href="http://www.mindcad.com/tiler.html">http://www.mindcad.com/tiler.html</a></p>
-<p>Thanks to @fonginator for the link.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -560,6 +586,10 @@ Safari users: You can set breakpoints, I couldn't fine 'Watch' ability, but you 
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/using-event-emitter-with-titanium/">Using Emitter for Events with Titanium</a>
+      </li>
+    
+      <li class="post">
         <a href="/getting-started-with-javascript-debugging-in-chrome/">Getting started with Javascript Debugger in Chrome</a>
       </li>
     
@@ -573,10 +603,6 @@ Safari users: You can set breakpoints, I couldn't fine 'Watch' ability, but you 
     
       <li class="post">
         <a href="/making-toolbar-buttons-that-respond-to-longpr/">Making toolbar buttons that respond to longpress in Titanium for iOS</a>
-      </li>
-    
-      <li class="post">
-        <a href="/metafield-tip-dont-bother-with-modify-when-up/">Metafield tip: don&#8217;t bother with Modify when updating Products</a>
       </li>
     
   </ul>
@@ -595,9 +621,30 @@ Safari users: You can set breakpoints, I couldn't fine 'Watch' ability, but you 
 </footer>
   
 
+<script type="text/javascript">
+      var disqus_shortname = 'meeech';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
 
 
 
